@@ -56,7 +56,7 @@
 
 </table>
 
-<h2> Diplomas </h2>
+<h2> Additional courses </h2>
 
 <td>
 
