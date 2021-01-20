@@ -37,8 +37,8 @@
 
 | **Course**                                                                                  | **Link**                                                                    |
 | ------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| <a href="https://softuni.bg/trainings/2838/js-advanced-may-2020"> JS Advanced </a>          | <a href="https://softuni.bg/certificates/details/83864/677cd2c4"> Link </a> |
-| <a href="https://softuni.bg/trainings/2840/js-applications-june-2020"> JS Applications </a> | <a href="https://softuni.bg/certificates/details/86804/39c858a7"> Link </a> |
+| <a href=""> JS Advanced </a>          | <a href=""> Link </a> |
+| <a href=""> JS Applications </a> | <a href=""> Link </a> |
 
 </td>
 
@@ -46,8 +46,17 @@
 
 | **Course**                                                                               | **Link**                                                                    |
 | ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| <a href="https://softuni.bg/trainings/3122/html-and-css-september-2020"> HTML & CSS </a> | <a href="https://softuni.bg/certificates/details/91333/14034f66"> Link </a> |
-| <a href="https://softuni.bg/trainings/3249/angular-november-2020"> Angular </a>          | <a href="https://softuni.bg/certificates/details/94796/261bec71"> Link </a> |
+| <a href="https://softuni.bg/trainings/3122/html-and-css-september-2020"> HTML & CSS </a> | <a href=""> Link </a> |
+| <a href="https://softuni.bg/trainings/3249/angular-november-2020"> Angular </a>          | <a href=""> Link </a> |
+
+
+| **Course**                                                                               | **Link**                                                                    |
+| ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| <a href=""> Data Structures Fundamentals  </a> | <a href=""> Link </a> |
+| <a href=""> Data Structures Advanced </a>          | <a href=""> Link </a> |
+
+
+
 
 </td>
 </tr>
@@ -60,6 +69,6 @@
 
 | **Diploma**      | **Link**                                                                    |
 | ---------------- | --------------------------------------------------------------------------- |
-| C# Web Developer | <a href="https://softuni.bg/certificates/details/92725/c215dbb8"> Link </a> |
+| C# Web Developer | <a href=""> Link </a> |
 
 </td>
