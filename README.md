@@ -52,7 +52,7 @@
 
 | **Course**                                                                               | **Link**                                                                    |
 | ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| <a href=""> Data Structures Fundamentals  </a> | <a href=""> Link </a> |
+| <a href=""> Data Structures Fundamentals  </a>     | <a href=""> Link </a> |
 | <a href=""> Data Structures Advanced </a>          | <a href=""> Link </a> |
 
 
