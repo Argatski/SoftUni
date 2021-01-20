@@ -16,7 +16,7 @@
   <th> C# </th>
   <th> JavaScript </th>
   <th> Front-End </th>
-  <th> Additional Courses </th>
+  
 </tr>
 
 <tr>
@@ -52,13 +52,6 @@
 
 </td>
 
-<td>
-
-| **Course**                                                                               | **Link**                                                                    |
-| ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| <a href="">Data Structures Fundamentals </a>     | <a href=""> Link </a> |
-| <a href="">Data Structures Advanced</a>          | <a href=""> Link </a> |
-</td>
 </tr>
 
 </table>
@@ -67,8 +60,10 @@
 
 <td>
 
-| **Diploma**      | **Link**                                                                    |
-| ---------------- | --------------------------------------------------------------------------- |
-| C# Web Developer | <a href=""> Link </a> |
+| **Course**                                                                               | **Link**                                                                    |
+| ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| <a href="">Data Structures Fundamentals </a>     | <a href=""> Link </a> |
+| <a href="">Data Structures Advanced</a>          | <a href=""> Link </a> |
+</td>
 
 </td>
