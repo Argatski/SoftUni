@@ -24,7 +24,7 @@
 | **Course**                                                            | **Link**                                                   |
 | --------------------------------------------------------------------- | ---------------------------------------------------------- |
 | <a href="https://softuni.bg/trainings/2179/programming-basics-with-csharp-november-2018" > Programming Basics with C# </a>         | <a href=""> Link</a> |
-| <a href="https://softuni.bg/trainings/2237/technology-fundamentals-with-csharp-january-2019"> Technology Fundamentals with C# </a> | <a href=""> Link</a> |
+| <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals"> Technology Fundamentals with C# </a> | <a href=""> Link</a> |
 | <a href="https://softuni.bg/trainings/2348/csharp-advanced-may-2019"> C# Advanced </a>                                             | <a href=""> Link</a> |
 | <a href="https://softuni.bg/trainings/2349/csharp-oop-june-2019"> C# OOP </a>                                                      | <a href=""> Link</a> |
 | <a href="https://softuni.bg/trainings/2495/databases-basics-ms-sql-server-september-2019"> Databases Basics - MS SQL Server </a>   | <a href=""> Link</a> |
