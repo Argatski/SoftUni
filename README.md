@@ -16,6 +16,7 @@
   <th> C# </th>
   <th> JavaScript </th>
   <th> Front-End </th>
+  <th> Additional Courses </th>
 </tr>
 
 <tr>
@@ -49,15 +50,15 @@
 | <a href="https://softuni.bg/trainings/3122/html-and-css-september-2020"> HTML & CSS </a> | <a href=""> Link </a> |
 | <a href="https://softuni.bg/trainings/3249/angular-november-2020"> Angular </a>          | <a href=""> Link </a> |
 
+</td>
+</tr>
 
+<tr>
+<td>
 | **Course**                                                                               | **Link**                                                                    |
 | ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
 | <a href=""> Data Structures Fundamentals  </a>     | <a href=""> Link </a> |
 | <a href=""> Data Structures Advanced </a>          | <a href=""> Link </a> |
-
-
-
-
 </td>
 </tr>
 
