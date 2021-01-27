@@ -19,7 +19,7 @@
 | <a> 05.List </a>                       | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/05.List"> Link</a> |
 | <a> 06.Classes And Objects Basic </a>  | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/06.ClassesAndObjects"> Link</a> |
 | <a> 07.Associative Arrays </a>         | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/07.AssociativeArrays"> Link</a> |
-| <a> </a>       | <a href=""> Link</a> |
+| <a> 08. Text Processing </a>           | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/08.Text%20Processing"> Link</a> |
 
 </td>
 
