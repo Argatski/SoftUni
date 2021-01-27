@@ -21,5 +21,6 @@
 | <a> 07.Associative Arrays </a>         | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/07.AssociativeArrays"> Link</a> |
 | <a> 08. Text Processing </a>           | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/08.Text%20Processing"> Link</a> |
 
+
 </td>
 
