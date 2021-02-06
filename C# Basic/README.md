@@ -2,7 +2,7 @@
 <table>
 
 <tr>
-  <th> C# - Basic - Content </th>
+  <th> C# - Basic </th>
    
 </tr>
 
