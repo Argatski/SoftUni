@@ -1,4 +1,4 @@
-<h2> This is a basic in C#. </h2>
+<h2> This is a basic C#. </h2>
 <table>
 
 <tr>
