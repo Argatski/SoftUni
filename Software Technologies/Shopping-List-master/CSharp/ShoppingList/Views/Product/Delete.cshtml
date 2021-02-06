@@ -1,0 +1,28 @@
+@model ShoppingList.Models.Product
+
+@{
+    ViewBag.Title = "Delete Product";
+}
+
+<h1>Delete Product</h1>
+
+<section>
+        @using (Html.BeginForm("Delete", "Product", FormMethod.Post, new { onsubmit = "checkValue()" }))
+        {
+            @Html.AntiForgeryToken()
+
+            <div>
+                <label for="priority">Priority</label>
+                <input type="text" id="priority" value="@Model.Priority" name="priority">
+                <label for="name">Name</label>
+                <input type="text" id="name" value="@Model.Name" name="name">
+                <label for="quantity">Quantity</label>
+                <input type="text" id="quantity" value="@Model.Quantity" name="quantity">
+                <label for="status">Status</label>
+                <input type="checkbox" id="status" value="@Model.Status" name="status" onclick="switchValue()">
+                <label for="status" id="status-label"></label>
+                <button type="submit" class="accept">Delete</button>
+                <button type="button" class="cancel" onclick="location.href='/';return false;">Cancel</button>
+            </div>
+        }
+</section>

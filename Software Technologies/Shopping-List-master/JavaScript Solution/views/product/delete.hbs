@@ -1,0 +1,19 @@
+<h1>Delete Product</h1>
+<section>
+    <form action="/delete/{{id}}" onsubmit="checkValue()" method="POST">
+        <div>
+            <label for="priority">Priority</label>
+            <input type="text" id="priority" value="{{priority}}" name="priority" disabled="disabled" />
+            <label for="name">Name</label>
+            <input type="text" id="name" value="{{name}}" disabled="disabled" name="name" />
+            <label for="quantity">Quantity</label>
+            <input type="text" id="quantity" disabled="disabled" value="{{quantity}}" name="quantity" />
+            <label for="status">Status</label>
+            <input type="checkbox" id="status" name="status" disabled="disabled" value="{{status}}" onclick="switchValue()">
+            <label for="status" id="status-label"></label>
+            <button type="submit" class="accept">Delete</button>
+            <button type="button" class="cancel" onclick="location.href='/'">Cancel</button>
+        </div>
+    </form>
+</section>
+

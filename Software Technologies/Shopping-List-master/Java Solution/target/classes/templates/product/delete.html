@@ -1,0 +1,19 @@
+<h1>Delete Product</h1>
+<section>
+    <form th:action="@{/delete/{id}(id=${product.id})}" onsubmit="checkValue()" method="POST">
+        <div>
+            <label for="priority">Priority</label>
+            <input type="text" id="priority" th:value="${product.priority}" name="priority" required="required"  />
+            <label for="name">Name</label>
+            <input type="text" id="name" th:value="${product.name}" required="required" name="name" />
+            <label for="quantity">Quantity</label>
+            <input type="text" id="quantity" th:value="${product.quantity}" required="required" name="quantity" />
+            <label for="status">Status</label>
+            <input type="checkbox" id="status" name="status" th:value="${product.status}" onclick="switchValue()" />
+            <label for="status" id="status-label"></label>
+            <button type="submit" class="accept">Delete</button>
+            <button type="button" class="cancel" th:onclick="'location.href = \'' + @{/} + '\''">Cancel</button>
+        </div>
+    </form>
+</section>
+
