@@ -4,13 +4,13 @@
 <table>
 
 <tr>
-  <th> Content </th>
+  <th>C# - Programming Fundamentals </th>
 </tr>
 
 <tr>
 <td>
 
-| **Programming Fundamentals**                                                            | **Link**                                                   |
+| **Content**                                                            | **Link**                                                   |
 | --------------------------------------------------------------------- | ---------------------------------------------------------- |
 | <a> 01.Basic Syntax </a>               | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/01.BasicSyntax"> Link</a> |
 | <a> 02.Data Types And Variables </a>   | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/02.DataTypesAndVariables"> Link</a> |
