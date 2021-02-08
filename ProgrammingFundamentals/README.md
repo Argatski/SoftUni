@@ -9,17 +9,8 @@
 </tr>
 
 <tr>
- 
- 
+
 <td>
-
-| **Content**                                                            | **Link**                                                   |
-| --------------------------------------------------------------------- | ---------------------------------------------------------- |
-| <a> 01.Mid Exams </a>               | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/01.BasicSyntax"> Link</a> |
-| <a> 02.Exams </a>   | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/02.DataTypesAndVariables"> Link</a> |
-
-
-</td><td>
 
 | **Content**                                                            | **Link**                                                   |
 | --------------------------------------------------------------------- | ---------------------------------------------------------- |
@@ -33,6 +24,13 @@
 | <a> 08.Text Processing </a>            | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/08.Text%20Processing"> Link</a> |
 | <a> 09.Regular Expressions </a>        | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/09.Regular%20Expressions"> Link</a> |
 
+</td>
+<td>
+
+| **Content**                                                            | **Link**                                                   |
+| --------------------------------------------------------------------- | ---------------------------------------------------------- |
+| <a> 01.Mid Exams </a>               | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/01.BasicSyntax"> Link</a> |
+| <a> 02.Exams </a>   | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/02.DataTypesAndVariables"> Link</a> |
 
 
 </td>
