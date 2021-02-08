@@ -5,10 +5,21 @@
 
 <tr>
   <th>C# - Programming Fundamentals </th>
+  <th>C# - Programming Fundamentals - Exams </th>
 </tr>
 
 <tr>
+ 
+ 
 <td>
+
+| **Content**                                                            | **Link**                                                   |
+| --------------------------------------------------------------------- | ---------------------------------------------------------- |
+| <a> 01.Mid Exams </a>               | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/01.BasicSyntax"> Link</a> |
+| <a> 02.Exams </a>   | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/02.DataTypesAndVariables"> Link</a> |
+
+
+</td><td>
 
 | **Content**                                                            | **Link**                                                   |
 | --------------------------------------------------------------------- | ---------------------------------------------------------- |
