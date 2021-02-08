@@ -30,7 +30,7 @@
 | **Content**                                                            | **Link**                                                   |
 | --------------------------------------------------------------------- | ---------------------------------------------------------- |
 | <a> 01.Mid Exams </a>               | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/01.BasicSyntax"> Link</a> |
-| <a> 02.Exams </a>   | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/02.DataTypesAndVariables"> Link</a> |
+| <a> 02.Final Exams </a>   | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/02.DataTypesAndVariables"> Link</a> |
 
 
 </td>
