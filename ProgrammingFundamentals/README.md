@@ -23,6 +23,7 @@
 | <a> 07.Associative Arrays </a>         | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/07.AssociativeArrays"> Link</a> |
 | <a> 08.Text Processing </a>            | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/08.Text%20Processing"> Link</a> |
 | <a> 09.Regular Expressions </a>        | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/09.Regular%20Expressions"> Link</a> |
+| <a> 10.Simple Web Project - Phonebook </a>        | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/10.WebPhonebook-Basic"> Link</a> |
 
 </td>
 <td>
