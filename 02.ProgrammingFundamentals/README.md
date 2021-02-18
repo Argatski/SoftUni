@@ -16,7 +16,7 @@
 | --------------------------------------------------------------------- | ---------------------------------------------------------- |
 | <a> 01.Basic Syntax </a>               | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/01.BasicSyntax"> Link</a> |
 | <a> 02.Data Types And Variables </a>   | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/02.DataTypesAndVariables"> Link</a> |
-| <a> 03.Array </a>                      | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/03.Array"> Link</a> |
+| <a> 03.Array </a>                      | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/04.Methods"> Link</a> |
 | <a> 04.Methods </a>                    | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/04.Methods/04.Methods"> Link</a> |
 | <a> 05.List </a>                       | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/05.List"> Link</a> |
 | <a> 06.Classes And Objects Basic </a>  | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/06.ClassesAndObjects"> Link</a> |
