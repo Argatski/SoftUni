@@ -21,7 +21,7 @@
 | <a> 05.List </a>                       | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/05.List"> Link</a> |
 | <a> 06.Classes And Objects Basic </a>  | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/06.ClassesAndObjects"> Link</a> |
 | <a> 07.Associative Arrays </a>         | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/07.AssociativeArrays"> Link</a> |
-| <a> 08.Text Processing </a>            | <a href=""> Link</a> |
+| <a> 08.Text Processing </a>            | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/08.TextProcessing"> Link</a> |
 | <a> 09.Regular Expressions </a>        | <a href=""> Link</a> |
 | <a> 10.Simple Web Project - Phonebook </a>  | <a href=""> Link</a> |
 
