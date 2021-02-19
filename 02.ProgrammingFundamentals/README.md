@@ -19,7 +19,7 @@
 | <a> 03.Array </a>                      | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/04.Methods"> Link</a> |
 | <a> 04.Methods </a>                    | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/04.Methods/04.Methods"> Link</a> |
 | <a> 05.List </a>                       | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/05.List"> Link</a> |
-| <a> 06.Classes And Objects Basic </a>  | <a href=""> Link</a> |
+| <a> 06.Classes And Objects Basic </a>  | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/06.ClassesAndObjects"> Link</a> |
 | <a> 07.Associative Arrays </a>         | <a href=""> Link</a> |
 | <a> 08.Text Processing </a>            | <a href=""> Link</a> |
 | <a> 09.Regular Expressions </a>        | <a href=""> Link</a> |
