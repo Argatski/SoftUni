@@ -31,7 +31,7 @@
 | **Content**                                                            | **Link**                                                   |
 | --------------------------------------------------------------------- | ---------------------------------------------------------- |
 | <a> 01.Mid Exams </a>               | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Mid%20Exam"> Link</a> |
-| <a> 02.Final Exams </a>   | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/FinalExam"> Link</a> |
+| <a> 02.Final Exams </a>   | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/FinalExam"> Link</a> |
 
 
 </td>
