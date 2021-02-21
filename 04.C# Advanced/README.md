@@ -14,7 +14,7 @@
 
 | **Content**                                                            | **Link**                                                   |
 | --------------------------------------------------------------------- | ---------------------------------------------------------- |
-| <a> 01.Stacks and Queues </a>               | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/01.BasicSyntax"> Link</a> |
+| <a> 01.Stacks and Queues </a>        | <a href="https://github.com/Argatski/SoftUni/tree/main/04.C%23%20Advanced/Exercise/01.StacksAndQueus/StacksAndQueuS-Labs"> Link</a> |
 | <a> 02. </a>   | <a href=""> Link</a> |
 | <a> 03.</a>                      | <a href=""> Link</a> |
 | <a> 04.Methods </a>                    | <a href="https://github.com/Argatski/SoftUni/tree/main/ProgrammingFundamentals/04.Methods/04.Methods"> Link</a> |
