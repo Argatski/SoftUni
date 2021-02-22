@@ -30,7 +30,7 @@
 
 | **Content**                                                            | **Link**                                                   |
 | --------------------------------------------------------------------- | ---------------------------------------------------------- |
-| <a> 02.Final Exams </a>   | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/FinalExam"> Link</a> |
+| <a> Final Exams </a>   | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/FinalExam"> Link</a> |
 
 
 </td>
