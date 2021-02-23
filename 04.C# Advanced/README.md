@@ -4,7 +4,7 @@
 <table>
 
 <tr>
-  <th>C# - C# Advance </th>
+  <th>C# - C# Advance - Exercise </th>
   <th>C# - C# Advance - Exams </th>
 </tr>
 
