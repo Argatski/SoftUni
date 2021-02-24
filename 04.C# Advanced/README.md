@@ -4,7 +4,7 @@
 <table>
 
 <tr>
-  <th>C# - C# Advance </th>
+  <th>C# - C# Advance - Exercise </th>
   <th>C# - C# Advance - Exams </th>
 </tr>
 
@@ -30,7 +30,7 @@
 
 | **Content**                                                            | **Link**                                                   |
 | --------------------------------------------------------------------- | ---------------------------------------------------------- |
-| <a> Final Exams </a>   | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/FinalExam"> Link</a> |
+| <a> Final Exams </a>   | <a href="https://github.com/Argatski/SoftUni/tree/main/04.C%23%20Advanced/Exams"> Link</a> |
 
 
 </td>
