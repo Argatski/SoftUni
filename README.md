@@ -25,7 +25,7 @@
 | **Course**                                                            | **Link**                                                   |
 | --------------------------------------------------------------------- | ---------------------------------------------------------- |
 | <a href="https://softuni.bg/trainings/2893/programming-basics-bulgaria-march-2020" > Programming Basics with C# </a>               |<a href="https://github.com/Argatski/SoftUni/tree/main/01.C%23%20Basic"> Link</a> |
-| <a href="https://softuni.bg/trainings/1940/software-technologies-july-2018"> Software Technologies </a>                 | <a href="https://github.com/Argatski/SoftUni/tree/main/03.Software%20Technologies"> Link</a> |
+| <a href="https://softuni.bg/trainings/1940/software-technologies-july-2018"> Software Technologies </a>                            |<a href="https://github.com/Argatski/SoftUni/tree/main/03.Software%20Technologies"> Link</a> |
 | <a href="https://softuni.bg/trainings/3213/csharp-fundamentals-january-2021"> Technology Fundamentals with C# </a>                 | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals"> Link</a> |
 | <a href="https://softuni.bg/trainings/3210/csharp-advanced-january-2021#lesson-21594"> C# Advanced </a>                            | <a href="https://github.com/Argatski/SoftUni/tree/main/04.C%23%20Advanced"> Link</a> |
 | <a href="https://softuni.bg/trainings/2349/csharp-oop-june-2019"> C# OOP </a>                                                      | <a href=""> Link</a> |
