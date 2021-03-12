@@ -10,11 +10,11 @@
     <li>For Loop Exercise</li>
   </ol>
   <li>While<ol>
-    <li>For While Lab</li>
-    <li>For While Exercise</li>
+    <li>While Lab</li>
+    <li>While Exercise</li>
   </ol>
     <li>Nested Loops<ol>
-    <li>For Nested Loops Lab</li>
-    <li>For Nested Loops Exercise</li>
+    <li>Nested Loops Lab</li>
+    <li>Nested Loops Exercise</li>
   </ol>
 </ol>
