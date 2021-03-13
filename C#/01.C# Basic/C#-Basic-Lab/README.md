@@ -9,5 +9,12 @@
     <li>For Loop Lab</li>
     <li>For Loop Exercise</li>
   </ol>
-    
+  <li>While<ol>
+    <li>While Lab</li>
+    <li>While Exercise</li>
+  </ol>
+    <li>Nested Loops<ol>
+    <li>Nested Loops Lab</li>
+    <li>Nested Loops Exercise</li>
+  </ol>
 </ol>
