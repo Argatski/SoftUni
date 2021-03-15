@@ -1,4 +1,3 @@
-<h2> Exercise - C# Advanced </h2>
 <h2> Basic - Labs and HomeWorks </h2>
 <ol>
   <li>Simple Calculations</li>
