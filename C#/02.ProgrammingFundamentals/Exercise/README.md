@@ -6,14 +6,8 @@
   <li>Methods</li>
   <li>List<il>
   <li>Classes And Objcet</li>
-  <li></li>
-  </ol>
-  <li>While<ol>
-    <li>While Lab</li>
-    <li>While Exercise</li>
-  </ol>
-    <li>Nested Loops<ol>
-    <li>Nested Loops Lab</li>
-    <li>Nested Loops Exercise</li>
-  </ol>
+  <li>Associative Arrays</li>
+  <li>Text Processing<il>
+  <li>Regular Expressions<il>
+  <li>Web Phonebook<ol>
 </ol>
