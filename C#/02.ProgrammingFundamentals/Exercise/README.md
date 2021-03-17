@@ -1,20 +1,13 @@
-<h2> Basic - Labs and HomeWorks </h2>
+<h2> Programming Fundamentals - Exercise </h2>
 <ol>
-  <li>Simple Calculations</li>
-  <li>Conditional Statemants<ol>
-    <li>Conditional Statemants Lab</li>
-    <li>Conditional Statemants Exercise</li>
-  </ol>
-  <li>For Loop<ol>
-    <li>For Loop Lab</li>
-    <li>For Loop Exercise</li>
-  </ol>
-  <li>While<ol>
-    <li>While Lab</li>
-    <li>While Exercise</li>
-  </ol>
-    <li>Nested Loops<ol>
-    <li>Nested Loops Lab</li>
-    <li>Nested Loops Exercise</li>
-  </ol>
+  <li>Basic Syntax</li>
+  <li>Data Types And Variables<il>
+  <li>Array</li>
+  <li>Methods</li>
+  <li>List<il>
+  <li>Classes And Objcet</li>
+  <li>Associative Arrays</li>
+  <li>Text Processing<il>
+  <li>Regular Expressions<il>
+  <li>Web Phonebook<ol>
 </ol>
