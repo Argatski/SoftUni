@@ -16,14 +16,14 @@
 | --------------------------------------------------------------------- | ---------------------------------------------------------- |
 | <a> 01.Stack and Queus </a>            | <a href=""> Link</a> |
 | <a> 02.Multidimensional Arrays </a>    | <a href=""> Link</a> |
-| <a> 03.Array </a>                      | <a href=""> Link</a> |
-| <a> 04.Methods </a>                    | <a href=""> Link</a> |
-| <a> 05.List </a>                       | <a href=""> Link</a> |
-| <a> 06.Classes And Objects Basic </a>  | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/06.ClassesAndObjects"> Link</a> |
-| <a> 07.Associative Arrays </a>         | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/07.AssociativeArrays"> Link</a> |
-| <a> 08.Text Processing </a>            | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/08.TextProcessing"> Link</a> |
-| <a> 09.Regular Expressions </a>        | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/09.RegularExpressions"> Link</a> |
-| <a> 10.Simple Web Project - Phonebook </a>  | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/10.WebPhonebook-Basic"> Link</a> |
+| <a> 03. </a>                      | <a href=""> Link</a> |
+| <a> 04. </a>                    | <a href=""> Link</a> |
+| <a> 05. </a>                       | <a href=""> Link</a> |
+| <a> 06. </a>  | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/06.ClassesAndObjects"> Link</a> |
+| <a> 07. </a>         | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/07.AssociativeArrays"> Link</a> |
+| <a> 08. </a>            | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/08.TextProcessing"> Link</a> |
+| <a> 09. </a>        | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/09.RegularExpressions"> Link</a> |
+| <a> 10. </a>  | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/10.WebPhonebook-Basic"> Link</a> |
 
 </td>
 <td>
