@@ -1,5 +1,5 @@
-<h1>Multidimensional Arrays</h1>
+<h1>Stack and Queus/h1>
 <ul>
-  <li>Matrix</li> 
-  <li>Jagged Arrays</li>
+  <li>Stacks</li> 
+  <li>Queus</li>
 </ul>
