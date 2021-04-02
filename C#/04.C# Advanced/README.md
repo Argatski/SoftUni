@@ -1,24 +1,38 @@
-<h2> C# Advanced</h2>
+ <h1>C# Advanced</h1>
+
 
 <table>
 
 <tr>
-  <th> C# </th>
+  <th>C# - Advanced - Exersice </th>
+  <th>C# - Advanced - Exams </th>
 </tr>
 
 <tr>
+
 <td>
 
-| **Course**                                                            | **Link**                                                   |
+| **Content Exersice**                                                            | **Link**                                                   |
 | --------------------------------------------------------------------- | ---------------------------------------------------------- |
-| <a href="" > Programming Basics with C# </a>               |<a href=""> Link</a> |
-| <a href=""> Software Technologies </a>                            |<a href=""> Link</a> |
-| <a href=""> Technology Fundamentals with C# </a>                 | <a href=""> Link</a> |
-| <a href=""> C# Advanced </a>                            | <a href=""> Link</a> |
-| <a href=""> C# OOP </a>                                                      | <a href=""> Link</a> |
-| <a href=""> Databases Basics - MS SQL Server </a>   | <a href=""> Link</a> |
-| <a href=""> Entity Framework Core </a>                         | <a href=""> Link</a> |
-| <a href=""> C# Web Basics </a>                                     | <a href=""> Link</a> |
-| <a href=""> ASP.NET Core </a>                                          | <a href=""> Link</a> |
+| <a> 01.Stack and Queus </a>            | <a href=""> Link</a> |
+| <a> 02.Multidimensional Arrays </a>    | <a href=""> Link</a> |
+| <a> 03. </a>                      | <a href=""> Link</a> |
+| <a> 04. </a>                    | <a href=""> Link</a> |
+| <a> 05. </a>                       | <a href=""> Link</a> |
+| <a> 06. </a>  | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/06.ClassesAndObjects"> Link</a> |
+| <a> 07. </a>         | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/07.AssociativeArrays"> Link</a> |
+| <a> 08. </a>            | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/08.TextProcessing"> Link</a> |
+| <a> 09. </a>        | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/09.RegularExpressions"> Link</a> |
+| <a> 10. </a>  | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/10.WebPhonebook-Basic"> Link</a> |
 
 </td>
+<td>
+
+| **Content**                                                            | **Link**                                                   |
+| --------------------------------------------------------------------- | ---------------------------------------------------------- |
+| <a> 01.Mid Exams </a>               | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Mid%20Exam"> Link</a> |
+| <a> 02.Final Exams </a>   | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/FinalExam"> Link</a> |
+
+
+</td>
+
