@@ -21,9 +21,9 @@
 | <a> 05. </a>                           | <a href=""> Link</a> |
 | <a> 06. </a>                           | <a href=""> Link</a> |
 | <a> 07. </a>                           | <a href=""> Link</a> |
-| <a> 08. </a>            | <a href=""> Link</a> |
-| <a> 09. </a>        | <a href=""> Link</a> |
-| <a> 10. </a>  | <a href="> Link</a> |
+| <a> 08. </a>                           | <a href=""> Link</a> |
+| <a> 09. </a>                           | <a href=""> Link</a> |
+| <a> 10. </a>                           | <a href=""> Link </a> |
 | <a> All</a> | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/04.C%23%20Advanced/Exercise"> Link</a> |
 
 </td>
