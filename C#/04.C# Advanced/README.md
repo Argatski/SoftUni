@@ -15,7 +15,7 @@
 | **Content Exersice**                                                            | **Link**                                                   |
 | --------------------------------------------------------------------- | ---------------------------------------------------------- |
 | <a> 01.Stack and Queus </a>            | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/04.C%23%20Advanced/Exercise/01.StacksAndQueus"> Link</a> |
-| <a> 02.Multidimensional Arrays </a>    | <a href=""> Link</a> |
+| <a> 02.Multidimensional Arrays </a>    | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/04.C%23%20Advanced/Exercise/02.MultidimensionalArrays"> Link</a> |
 | <a> 03. </a>                           | <a href=""> Link</a> |
 | <a> 04. </a>                           | <a href=""> Link</a> |
 | <a> 05. </a>                           | <a href=""> Link</a> |
