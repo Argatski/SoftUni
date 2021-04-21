@@ -18,7 +18,7 @@
 | <a> 02.Data Types And Variables </a>   | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/02.ProgrammingFundamentals/Exercise/02.DataTypesAndVariables"> Link</a> |
 | <a> 03.Array </a>                      | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/02.ProgrammingFundamentals/Exercise/03.Array"> Link</a> |
 | <a> 04.Methods </a>                    | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/02.ProgrammingFundamentals/Exercise/04.Methods/04.Methods"> Link</a> |
-| <a> 05.List </a>                       | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/05.List"> Link</a> |
+| <a> 05.List </a>                       | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/02.ProgrammingFundamentals/Exercise/05.List"> Link</a> |
 | <a> 06.Classes And Objects Basic </a>  | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/06.ClassesAndObjects"> Link</a> |
 | <a> 07.Associative Arrays </a>         | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/07.AssociativeArrays"> Link</a> |
 | <a> 08.Text Processing </a>            | <a href="https://github.com/Argatski/SoftUni/tree/main/02.ProgrammingFundamentals/Exercise/08.TextProcessing"> Link</a> |
