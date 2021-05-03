@@ -22,9 +22,7 @@
 | <a> 06.DefiningClasses </a>            | <a href=""> Link</a> |
 | <a> 07.ImplementingLinkedList </a>     | <a href=""> Link</a> |
 | <a> 08.Generics </a>                   | <a href=""> Link</a> |
-| <a> 09. </a>                           | <a href=""> Link</a> |
-| <a> 10. </a>                           | <a href=""> Link </a> |
-| <a> All</a> | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/04.C%23%20Advanced/Exercise"> Link</a> |
+| <a> All</a> | <a href=""> Link</a> |
 
 </td>
 <td>
