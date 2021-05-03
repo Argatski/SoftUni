@@ -19,7 +19,7 @@
 | <a> 03.Sets and Dictionaries Advanced </a>  | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/04.C%23%20Advanced/Exercise/03.SetsAndDictionaries"> Link</a> |
 | <a> 04.StreamsFilesAndDirectiories</a> | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/04.C%23%20Advanced/Exercise/04.StreamsFilesAndDirectiories"> Link</a> |
 | <a> 05.FunctionalProgramming </a>      | <a href=""> Link</a> |
-| <a> 06. </a>                           | <a href=""> Link</a> |
+| <a> 06.DefiningClasses </a>            | <a href=""> Link</a> |
 | <a> 07. </a>                           | <a href=""> Link</a> |
 | <a> 08. </a>                           | <a href=""> Link</a> |
 | <a> 09. </a>                           | <a href=""> Link</a> |
