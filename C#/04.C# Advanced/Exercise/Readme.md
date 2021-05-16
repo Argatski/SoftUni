@@ -5,4 +5,8 @@
     <li>Sets and Dictionaries</li>
     <li>Streams Files and Directiories</li>
     <li>Functional Programming</li>
+    <li>Defining Classes</li>
+    <li></li>
+    <li>Functional Programming</li>
+  
   </ol>
