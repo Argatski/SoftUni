@@ -3,6 +3,6 @@
     <li>Stack and Queues</li> 
     <li>Multidimensional Arrays</li>
     <li>Sets and Dictionaries</li>
-    <li>StreamsFilesAndDirectiories</li>
+    <li>Streams Files and Directiories</li>
     <li>Functional Programming</li>
   </ol>
