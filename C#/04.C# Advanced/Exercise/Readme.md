@@ -4,4 +4,5 @@
     <li>Multidimensional Arrays</li>
     <li>Sets and Dictionaries</li>
     <li>StreamsFilesAndDirectiories</li>
+    <li>Functional Programming</li>
   </ol>
