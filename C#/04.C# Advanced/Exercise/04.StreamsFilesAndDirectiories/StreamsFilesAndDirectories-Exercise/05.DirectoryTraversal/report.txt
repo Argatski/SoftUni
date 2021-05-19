@@ -1,0 +1,32 @@
+.dll
+--05.DirectoryTraversal.dll -   7kb
+.exe
+--05.DirectoryTraversal.exe - 170kb
+.pdb
+--05.DirectoryTraversal.pdb -  10kb
+.json
+--05.DirectoryTraversal.runtimeconfig.json -   0kb
+--05.DirectoryTraversal.runtimeconfig.dev.json -   0kb
+--05.DirectoryTraversal.deps.json -   0kb
+.dll
+--05.DirectoryTraversal.dll -   7kb
+.exe
+--05.DirectoryTraversal.exe - 170kb
+.pdb
+--05.DirectoryTraversal.pdb -  10kb
+.pdf
+--Calcpad - Земен натиск.pdf - 144kb
+--Calcpad - Подпорна стена.pdf - 493kb
+.json
+--05.DirectoryTraversal.runtimeconfig.json -   0kb
+--05.DirectoryTraversal.runtimeconfig.dev.json -   0kb
+--05.DirectoryTraversal.deps.json -   0kb
+.rvt
+--Project1.0020.rvt - 5652kb
+--Project1.0021.rvt - 5968kb
+--Project1.rvt - 6204kb
+.cpd
+--Интеракционна диаграма за Ст.Б. сечение с несиметрична армировка .cpd -   4kb
+--Оразмеряване на правоъгълно сечение за огъване.cpd -   5kb
+--Оразмеряване на правоъгълно сечение за напречна сила.cpd -   6kb
+--Axial Force.cpd -  10kb
