@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace _01.ReverseStrings
 {
@@ -9,27 +8,32 @@ namespace _01.ReverseStrings
         static void Main(string[] args)
         {
             //Input
-            string text = Console.ReadLine();
+            string input = Console.ReadLine();
 
-            Stack<char> reverese = new Stack<char>();
+            //Solution
+            Stack<char> reverseString = new Stack<char>();
 
-
-            for (int i = 0; i < text.Length; i++)
+            for (int i = 0; i < input.Length; i++)
             {
-                reverese.Push(text[i]);
+                reverseString.Push(input[i]);
             }
 
-            Console.WriteLine(string.Join("", reverese));
-
-
-            //Another solution
-            /*Stack<string> r = new Stack<string>(Console.ReadLine().Select(x=>x.ToString()));
-
-            while (r.Count > 0)
+            while (reverseString.Count>0)
             {
-                Console.Write(r.Pop());
+                Console.Write(reverseString.Pop());
             }
-            Console.WriteLine();*/
+
+            Console.WriteLine();
         }
+
+        //Another solution
+        /*Stack<string> r = new Stack<string>(Console.ReadLine().Select(x=>x.ToString()));
+
+        while (r.Count > 0)
+        {
+            Console.Write(r.Pop());
+        }
+        Console.WriteLine();*/
+
     }
 }
