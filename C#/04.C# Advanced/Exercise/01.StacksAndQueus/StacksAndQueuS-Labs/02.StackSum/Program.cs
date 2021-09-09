@@ -9,6 +9,47 @@ namespace _02.StackSum
         static void Main(string[] args)
         {
             //Input
+            int[] numbers = Console.ReadLine()
+                .Split(" ", StringSplitOptions.RemoveEmptyEntries)
+                .Select(int.Parse)
+                .ToArray();
+
+            //Create stack whit numbers
+            Stack<int> allNumbers = new Stack<int>(numbers);
+
+            //Solution
+            string command = Console.ReadLine().ToLower();
+            while (command != "end")
+            {
+                string[] arguments = command
+                    .Split(" ");
+
+                if (arguments.Contains("add"))
+                {
+                    for (int i = 1; i < arguments.Length; i++)
+                    {
+                        allNumbers.Push(int.Parse(arguments[i]));
+                    }
+                }
+                else if (arguments.Contains("remove"))
+                {
+                    int removeNumbers = int.Parse(arguments[1]);
+                    if (removeNumbers <= allNumbers.Count)
+                    {
+                        for (int i = 0; i < removeNumbers; i++)
+                        {
+                            allNumbers.Pop();
+                        }
+                    }
+                }
+
+                command = Console.ReadLine().ToLower();
+            }
+
+            Console.WriteLine("Sum: " + allNumbers.Sum());
+        }
+        /*Anathor Solution
+            //Input
             int[] num = Console.ReadLine()
                 .Split()
                 .Select(int.Parse)
@@ -42,6 +83,6 @@ namespace _02.StackSum
                 }
             }
             Console.WriteLine("Sum: " + numbers.Sum());
-        }
+          */
     }
 }
