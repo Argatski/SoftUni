@@ -10,28 +10,31 @@ namespace _02._01.DecimalToBinaryConverter
             //Input
             int decimalNumber = int.Parse(Console.ReadLine());
 
-            Stack<int> binaryNumber = new Stack<int>();
 
-            if (decimalNumber==0)
+            //Solution
+            Stack<string> binary = new Stack<string>();
+
+            if (decimalNumber == 0)
             {
                 Console.WriteLine(0);
+                return;
             }
             else
             {
-                while (decimalNumber>0)
+                while (decimalNumber > 0)
                 {
-                    int divide =  decimalNumber % 2;
-
+                    int divide = decimalNumber % 2;
                     decimalNumber /= 2;
 
-                    binaryNumber.Push(divide);
+                    binary.Push(divide.ToString());
                 }
 
             }
 
-            while (binaryNumber.Count>0)
+            //Print solution
+            while (binary.Count > 0)
             {
-                Console.Write(binaryNumber.Pop());
+                Console.Write(binary.Pop());
             }
             Console.WriteLine();
         }
