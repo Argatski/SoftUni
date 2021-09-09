@@ -9,27 +9,33 @@ namespace _03.SimpleCalculator
         static void Main(string[] args)
         {
             //Input
-            Stack<string> simpleCalculator = new Stack<string>(Console.ReadLine().Split().Reverse());
+            string[] input = Console.ReadLine()
+                .Split(" ");
 
+            //Solution
+            Stack<string> calculator = new Stack<string>(input.Reverse());
 
-            while (simpleCalculator.Count>1)
+            while (calculator.Count>1)
             {
-                int firstNumber = int.Parse(simpleCalculator.Pop());
-                string operand = simpleCalculator.Pop();
-                int secondNumber = int.Parse(simpleCalculator.Pop());
+                int firstNum = int.Parse(calculator.Pop());
+                string operand = calculator.Pop();
+                int seconNum = int.Parse(calculator.Pop());
+
 
                 if (operand=="+")
                 {
-                    int sum = firstNumber + secondNumber;
-                    simpleCalculator.Push(sum.ToString());
+                    int result = firstNum + seconNum;
+                    calculator.Push(result.ToString());
                 }
                 else if (operand=="-")
                 {
-                    int result = firstNumber - secondNumber;
-                    simpleCalculator.Push(result.ToString());
+                    int result = firstNum - seconNum;
+                    calculator.Push(result.ToString());
                 }
             }
-            Console.WriteLine(simpleCalculator.Pop());
+
+            //Print result
+            Console.WriteLine(calculator.Pop());
         }
     }
 }
