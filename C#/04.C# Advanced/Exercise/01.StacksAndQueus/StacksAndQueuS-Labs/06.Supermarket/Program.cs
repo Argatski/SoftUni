@@ -7,15 +7,27 @@ namespace _06.Supermarket
     {
         static void Main(string[] args)
         {
-            //Input
-            string name = string.Empty;
-
             Queue<string> people = new Queue<string>();
 
-            while ((name = Console.ReadLine())!="End")
+            //Solution
+            Processing(people);
+
+            //Print 
+            Printing(people);
+        }
+
+         static void Printing(Queue<string> people)
+        {
+            Console.WriteLine(people.Count + " people remaining.");
+        }
+
+        static void Processing(Queue<string> people)
+        {
+            string input = string.Empty;
+
+            while ((input = Console.ReadLine()) != "End")
             {
-                
-                if (name=="Paid")
+                if (input=="Paid")
                 {
                     while (people.Count>0)
                     {
@@ -24,11 +36,10 @@ namespace _06.Supermarket
                 }
                 else
                 {
-                    people.Enqueue(name);
+                    people.Enqueue(input);
                 }
-            }
-            Console.WriteLine($"{people.Count} people remaining.");
 
+            }
         }
     }
 }
