@@ -8,23 +8,26 @@ namespace _04.MatchingBrackets
         static void Main(string[] args)
         {
             //Input
-            string text = Console.ReadLine();
+            string expression = Console.ReadLine();
 
-            Stack<int> brackets = new Stack<int>();
+            //Solution
+            Stack<int> positionBrackets = new Stack<int>();
 
-            for (int i = 0; i < text.Length; i++)
+            for (int i = 0; i < expression.Length; i++)
             {
-                if (text[i] == '(')
+                if (expression[i] == '(')
                 {
-                    brackets.Push(i);
+                    positionBrackets.Push(i);
                 }
-                else if (text[i] == ')')
+                else if (expression[i] == ')')
                 {
-                    int startIndex = brackets.Pop();
-                    Console.WriteLine(text.Substring(startIndex, i - startIndex + 1));
+                    int startExpression = positionBrackets.Pop();
+                    int endExpression = i;
+                    int lenght = endExpression - startExpression + 1;
+
+                    Console.WriteLine(expression.Substring(startExpression, lenght));
                 }
             }
-
         }
     }
 }
