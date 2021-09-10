@@ -9,22 +9,27 @@ namespace _05.PrintEvenNumbers
         static void Main(string[] args)
         {
             //Input
-            int[] array = Console.ReadLine()
-                 .Split()
-                 .Select(int.Parse)
-                 .ToArray();
+            int[] numbers = Console.ReadLine()
+                .Split(" ",StringSplitOptions.RemoveEmptyEntries)
+                .Select(int.Parse)
+                .ToArray();
 
-            Queue<int> numbers = new Queue<int>();
 
-            //Processing
-            for (int i = 0; i < array.Length; i++)
+            //Solution
+
+            Queue<int> addsNumber = new Queue<int>();
+
+            for (int i = 0; i < numbers.Length; i++)
             {
-                if (array[i] % 2 == 0)
+                if (numbers[i]%2==0)
                 {
-                    numbers.Enqueue(array[i]);
+                    addsNumber.Enqueue(numbers[i]);
                 }
             }
-            Console.WriteLine(string.Join(", ",numbers));
+
+            Console.WriteLine(string.Join(", ",addsNumber));
+
+           
         }
     }
 }
