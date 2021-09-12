@@ -8,6 +8,51 @@ namespace _08.TrafficJam
         static void Main(string[] args)
         {
             //Input
+            int carsPass = int.Parse(Console.ReadLine());
+
+            Queue<string> traffic = new Queue<string>();
+
+            //Proccesing
+            string command = "";
+
+            int countCarsPass = 0;
+
+            while ((command = Console.ReadLine()) != "end")
+            {
+                if (command == "green")
+                {
+                    for (int i = 0; i < carsPass; i++)
+                    {
+                        if (traffic.Count > 0)
+                        {
+                            //Cars passed
+                            Console.WriteLine(traffic.Dequeue() + " passed!");
+                            countCarsPass++;
+                        }
+                        else
+                        {
+                            break;
+                        }
+                    }
+                }
+                else
+                {
+                    traffic.Enqueue(command);
+                }
+            }
+
+            //Print numbers of cars passed the crossroads.
+            Console.WriteLine($"{countCarsPass} cars passed the crossroads.");
+        }
+    }
+
+
+    /* Another solution
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Input
             int numberCars = int.Parse(Console.ReadLine());
 
             string arg = string.Empty;
@@ -38,6 +83,5 @@ namespace _08.TrafficJam
             }
 
             Console.WriteLine($"{count} cars passed the crossroads.");
-        }
-    }
+           */
 }
