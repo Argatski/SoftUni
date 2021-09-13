@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace _02.BasicQueueOperations
 {
-    class Program
+    class BasicQueueOperations
     {
         static void Main(string[] args)
         {
@@ -28,7 +28,7 @@ namespace _02.BasicQueueOperations
 
         private static void ChekedNumberInQueue(Queue<int> numbers, int v)
         {
-            if (numbers.Count==0)
+            if (numbers.Count == 0)
             {
                 Console.WriteLine("0");
             }
