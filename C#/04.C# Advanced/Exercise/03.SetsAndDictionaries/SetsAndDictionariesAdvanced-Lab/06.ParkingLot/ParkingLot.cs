@@ -15,6 +15,11 @@ namespace _06.ParkingLot
             Processing(parkingLot);
 
             //Print all car in parkinglot
+            if (!parkingLot.Any())
+            {
+                Console.WriteLine("Parking Lot is Empty");
+                Environment.Exit(0);
+            }
             Print(parkingLot);
         }
         /// <summary>
