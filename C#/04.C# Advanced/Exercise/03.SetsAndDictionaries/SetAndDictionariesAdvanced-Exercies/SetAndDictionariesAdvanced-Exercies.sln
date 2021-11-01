@@ -13,11 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.EvenTimes", "04.EvenTime
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.CountSymbols", "05.CountSymbols\05.CountSymbols.csproj", "{18E70E61-E7F2-4DE2-81C3-D4F78BB6A274}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.Wardrobe", "05.Wardrobe\05.Wardrobe.csproj", "{C6367D5C-AFE2-486B-9C4A-4D48B2268082}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06.Wardrobe", "05.Wardrobe\06.Wardrobe.csproj", "{C6367D5C-AFE2-486B-9C4A-4D48B2268082}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07.TheV-Logger", "07.TheV-Logger\07.TheV-Logger.csproj", "{F1301507-E795-4468-B7ED-85A234E38DA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.Ranking", "08.Ranking\08.Ranking.csproj", "{A5D56973-2364-4A46-911E-024CB1CECF2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08.Ranking", "08.Ranking\08.Ranking.csproj", "{A5D56973-2364-4A46-911E-024CB1CECF2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
