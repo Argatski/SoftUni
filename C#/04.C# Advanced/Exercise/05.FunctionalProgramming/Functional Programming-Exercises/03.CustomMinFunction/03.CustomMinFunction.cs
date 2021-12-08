@@ -9,33 +9,34 @@ namespace _03.CustomMinFunction
         static void Main(string[] args)
         {
             //Input
-            int[] numbers = Console.ReadLine()
-                .Split(" ", StringSplitOptions.RemoveEmptyEntries)
-                .Select(int.Parse)
-                .ToArray();
+            List<int> numbers = Console.ReadLine()
+                 .Split(" ", StringSplitOptions.RemoveEmptyEntries)
+                 .Select(int.Parse)
+                 .ToList();
 
             //Solution
-            int result = MinFunction(numbers);
+            int minFistNum = MinFunction(numbers);
 
-            //Print result
-
-            Console.WriteLine(result);
+            //Print result min value
+            Console.WriteLine(minFistNum);
         }
 
-        static Func<int[], int> MinFunction = n =>
-        {
-            int minNumber = int.MaxValue;
+        /// <summary>
+        /// The function looks for a minimum value in an array.
+        /// </summary>
+        private static Func<List<int>, int> MinFunction = n =>
+         {
+             int minNumber = int.MaxValue;
 
-            for (int i = 0; i < n.Length; i++)
-            {
-                if (n[i] < minNumber)
-                {
-                    minNumber = n[i];
-                }
-            }
-
-            return minNumber;
-        };
+             for (int i = 0; i < n.Count; i++)
+             {
+                 if (n[i] < minNumber)
+                 {
+                     minNumber = n[i];
+                 }
+             }
+             return minNumber;
+         };
 
         /*static void Main(string[] args)
         {
