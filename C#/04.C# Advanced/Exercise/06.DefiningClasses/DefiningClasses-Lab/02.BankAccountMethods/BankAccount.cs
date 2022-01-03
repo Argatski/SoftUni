@@ -11,21 +11,53 @@ namespace BankAccount
         public int Id { get; set; }
         public decimal Balance { get; set; }
 
-        //Methonds
-        public  void Deposit(decimal amount)
+        /*//Another solution
+        //Fields
+        private int id;
+        private decimal balance;
+
+
+        
+        /*
+        public int Id
+        {
+            get { return id; }
+            set { balance = value; }
+        }
+        public decimal Balance
+        {
+            get { return balance; }
+            set { balance = value; }
+        }
+        */
+
+        //Methods
+        public void Deposit(decimal amount) 
         {
             Balance += amount;
         }
 
-        public void Withdraw(decimal amount)
+        public void Withdraw(decimal amount) 
         {
             Balance -= amount;
         }
 
         public override string ToString()
         {
-            return $"Account {Id}, balance {Balance}";
+            return $"Account {Id}, Balance {Balance}";
         }
 
+        /// <summary>
+        /// Another method of printing the result
+        /// </summary>
+        /// <returns></returns>
+        /*
+        public string Print()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append($"Account {Id}, Balamce {Balance}");
+
+            return sb.ToString();
+        }*/
     }
 }
