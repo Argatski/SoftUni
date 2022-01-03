@@ -6,13 +6,16 @@ namespace BankAccount
     {
         public static void Main(string[] args)
         {
-            BankAccount acc = new BankAccount();
-
             //Instance
-            acc.Id = 1;
-            acc.Balance = 15;
+            BankAccount account = new BankAccount();
 
-            Console.WriteLine($"Account {acc.Id}, balance{acc.Balance}");
+            account.Id = 1;
+            account.Balance = 15;
+
+            //Print result
+            Console.WriteLine($"Account {account.Id}, balance {account.Balance}");
+
+           
         }
     }
 }
