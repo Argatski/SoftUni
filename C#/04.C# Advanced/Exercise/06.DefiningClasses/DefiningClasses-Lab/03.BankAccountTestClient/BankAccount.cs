@@ -4,8 +4,9 @@ using System.Text;
 
 namespace BankAccount
 {
-    public class BankAccount
+    class BankAccount
     {
+
         //Properties
         public int Id { get; set; }
         public decimal Balance { get; set; }
@@ -24,5 +25,6 @@ namespace BankAccount
         {
             return $"Account ID{Id}, balance {Balance:f2}";
         }
+
     }
 }
