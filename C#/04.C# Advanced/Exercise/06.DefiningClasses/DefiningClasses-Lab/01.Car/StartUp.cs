@@ -6,6 +6,7 @@ namespace CarManufacturer
     {
         static void Main(string[] args)
         {
+            //Istant
             Car car = new Car()
             {
                 Make = "Vw",
@@ -13,6 +14,7 @@ namespace CarManufacturer
                 Year = 1992
             };
 
+            //Print result
             Console.WriteLine($"Make: {car.Make}\nModel: {car.Model}\nYear: {car.Year}");
         }
     }
