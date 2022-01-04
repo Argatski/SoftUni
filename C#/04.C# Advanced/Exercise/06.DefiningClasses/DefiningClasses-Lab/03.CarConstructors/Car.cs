@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CarManufacturer
 {
-    public class Car
+    class Car
     {
         //Properties
         public string Make { get; set; }
@@ -13,8 +13,10 @@ namespace CarManufacturer
         public double FuelQuantity { get; set; }
         public double FuelConsumption { get; set; }
 
-
-        //Constructors
+        /// <summary>
+        /// Constructor with default values:
+        /// </summary>
+        /// <param name="default"></param>
         public Car()
         {
             Make = "VW";
@@ -23,13 +25,29 @@ namespace CarManufacturer
             FuelQuantity = 200;
             FuelConsumption = 10;
         }
+
+        /// <summary>
+        /// Constructor accepting make, model and year upon initialization and calls the base constructor with its default values for fuelQuantity and fuelConsumption.
+        /// </summary>
+        /// <param name="make"></param>
+        /// <param name="model"></param>
+        /// <param name="year"></param>
         public Car(string make, string model, int year)
+            : this()
         {
             Make = make;
             Model = model;
             Year = year;
         }
 
+        /// <summary>
+        /// Constructor accepting make, model, year, fuelQuantity and fuelConsumption upon initialization and reuses the second constructor to set the make, model and year values.
+        /// </summary>
+        /// <param name="make"></param>
+        /// <param name="model"></param>
+        /// <param name="year"></param>
+        /// <param name="fuelQuantity"></param>
+        /// <param name="fuelconsumption"></param>
         public Car(string make, string model, int year, double fuelQuantity, double fuelConsumption)
             : this(make, model, year)
         {
@@ -37,11 +55,11 @@ namespace CarManufacturer
             FuelConsumption = fuelConsumption;
         }
 
-        //Methods and functions
 
+        //Methods
         public void Drive(double distance)
         {
-            double result = FuelQuantity - (FuelConsumption * distance);
+            double result = FuelQuantity - distance * FuelConsumption;
 
             if (result >= 0)
             {
@@ -53,16 +71,24 @@ namespace CarManufacturer
             }
         }
 
-        public string WhoIam(Car car)
+        /*
+        public string WhoAmI(Car car)
         {
-            StringBuilder sb = new StringBuilder();
-            sb.AppendLine(Make);
-            sb.AppendLine(Model);
-            sb.AppendLine(Year.ToString());
-            sb.AppendLine(FuelQuantity.ToString());
-            sb.AppendLine(FuelConsumption.ToString());
+            StringBuilder text = new StringBuilder();
+            text.AppendLine($"Make:{Make}");
+            text.AppendLine($"Model:{Model}");
+            text.AppendLine($"Year:{Year}");
+            text.AppendLine($"Fuel:{FuelQuantity:f2}L");
 
-            return sb.ToString();
+            string message = text + "";
+
+            return message;
         }
+        */
+
+       public override string ToString()
+       {
+           return $"Make: {Make}\nModel: {Model}\nYear: {Year}\nFuel: {FuelQuantity:f2}";
+       }
     }
 }
