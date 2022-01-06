@@ -14,11 +14,11 @@ namespace CarManufacturer
         public int HorsePower { get; set; }
         public double CubicCapacity { get; set; }
 
-        //Constructor
+        //Constructors
         public Engine(int horsePower, double cubicCapacity)
         {
-            HorsePower = horsePower;
-            CubicCapacity = cubicCapacity;
+            this.HorsePower = horsePower;
+            this.CubicCapacity = cubicCapacity;
         }
     }
 }
