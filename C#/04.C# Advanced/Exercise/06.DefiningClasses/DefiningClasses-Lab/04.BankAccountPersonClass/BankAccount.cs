@@ -19,10 +19,9 @@ namespace BankAccount
         {
             return Balance -= amount;
         }
-
         public override string ToString()
         {
-            return $"Acount ID{Id}, balance {Balance:F2}";
+            return $"Account ID{Id}, balance {Balance:F2}";
         }
     }
 }
