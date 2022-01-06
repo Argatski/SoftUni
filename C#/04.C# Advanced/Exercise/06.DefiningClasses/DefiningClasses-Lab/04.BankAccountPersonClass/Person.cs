@@ -12,27 +12,24 @@ namespace BankAccount
         private int age;
         private List<BankAccount> accounts;
 
-        //Properties
-        public string Name { get; set; }
-        public int Age { get; set; }
-        public List<BankAccount> Accounts { get; set; }
 
-        //Constructor
-
-        public Person(string name, int age):this(name,age, new List<BankAccount>())
+        //Constructors
+        public Person(string name, int age)
         {
+            this.name = name;
+            this.age = age;
         }
         public Person(string name, int age, List<BankAccount> accounts)
+            : this(name, age)
         {
-            Name = name;
-            Age = age;
-            Accounts = accounts;
+            this.accounts = new List<BankAccount>();
         }
 
         //Methods
         public decimal GetBalance()
         {
-            return accounts.Sum(a=>a.Balance) ;
+            decimal sum = accounts.Sum(a => a.Balance);
+            return sum;
         }
     }
 }
