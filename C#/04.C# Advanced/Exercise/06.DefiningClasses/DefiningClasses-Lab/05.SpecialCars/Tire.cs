@@ -10,7 +10,7 @@ namespace CarManufacturer
         public int Year { get; set; }
         public double Pressure { get; set; }
 
-        //Constructor
+        //Constructors
         public Tire(int year, double pressure)
         {
             Year = year;
