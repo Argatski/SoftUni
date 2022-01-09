@@ -6,17 +6,15 @@ namespace CarManufacturer
 {
     public class Engine
     {
-
         //Properties
         public int HorsePower { get; set; }
-        public double CubicCapacity { get; set; }
+        public double CubicCapasity { get; set; }
 
         //Constructor
-
-        public Engine(int horsePower,double cubicCapacity)
+        public Engine(int horsePower, double cubicCapasity)
         {
             HorsePower = horsePower;
-            CubicCapacity = cubicCapacity;
+            CubicCapasity = cubicCapasity;
         }
     }
 }
