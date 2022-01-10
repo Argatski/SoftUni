@@ -6,10 +6,30 @@ namespace DefiningClasses
     {
         static void Main(string[] args)
         {
-            Person person = new Person("Pesho",25);
-            Person person1 = new Person("Gosho",18);
-            Person person2 = new Person("Stamat",43);
+            //Instance
+            /*
+            Person person = new Person();
+            
+            person.Name = "Pesho";
+            person.Age = 20;
 
+            person.Name = "Gosho";
+            person.Age = 18;
+
+            person.Name = "Stamat";
+            person.Age = 43;
+
+            */
+            Person pesho = new Person("Pesho", 20);
+            Person gosho = new Person("Gosho", 18);
+            Person stamat = new Person("Stamat", 43);
+
+            /*
+            //Console.WriteLine(person);
+            Console.WriteLine(pesho);
+            Console.WriteLine(gosho);
+            Console.WriteLine(stamat);
+            */
         }
     }
 }
