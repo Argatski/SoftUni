@@ -7,8 +7,8 @@ namespace DefiningClasses
 {
     public class Family
     {
-        //Properties
-        List<Person> People { get; set; } = new List<Person>();
+        //Poperties
+        public List<Person> People { get; set; } = new List<Person>();
 
         //Methods
         public void AddMember(Person member)
