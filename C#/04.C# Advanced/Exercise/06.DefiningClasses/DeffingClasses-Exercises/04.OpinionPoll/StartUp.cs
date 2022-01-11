@@ -10,28 +10,44 @@ namespace DefiningClasses
         {
             int number = int.Parse(Console.ReadLine());
 
+            //Instance list of people
             List<Person> people = new List<Person>();
 
             for (int i = 0; i < number; i++)
             {
-                string[] arguments = Console.ReadLine()
-                    .Split();
+                string[] input = Console.ReadLine()
+                    .Split(" ", StringSplitOptions.RemoveEmptyEntries);
 
-                string name = arguments[0];
-                int age = int.Parse(arguments[1]);
+                string name = input[0];
+                int age = int.Parse(input[1]);
 
-                var person = new Person(name, age);
+                Person person = new Person(name, age);
 
                 people.Add(person);
             }
 
-            var result = people.Where(p => p.Age > 30)
-                .OrderBy(n => n.Name);
+            /*
+            var result = people.Where(a => a.Age > 30)
+                .OrderBy(a => a.Name);
+            */
 
-            foreach (var item in result)
+            PrintResult(people);
+
+        }
+        /// <summary>
+        /// Prints all people, whose age is more than 30 years, sorted in alphabetical order.
+        /// </summary>
+        /// <param name="people"></param>
+        private static void PrintResult(List<Person> people)
+        {
+            foreach (var person in people.OrderBy(a=>a.Name))
             {
-                Console.WriteLine($"{item.Name} - {item.Age}");
+                if (person.Age>30)
+                {
+                    Console.WriteLine($"{person.Name} - {person.Age}");
+                }
             }
         }
     }
 }
+
