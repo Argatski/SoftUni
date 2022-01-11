@@ -7,27 +7,30 @@ namespace DefiningClasses
     {
         static void Main(string[] args)
         {
-            //Input 
-            int numberOfPeople = int.Parse(Console.ReadLine());
+            //Input
+            int number = int.Parse(Console.ReadLine());
 
+            //Instance family
             Family family = new Family();
 
-            for (int i = 0; i < numberOfPeople; i++)
+            for (int i = 0; i < number; i++)
             {
-                string[] arguments = Console.ReadLine()
-                    .Split(" ");
+                string[] input = Console.ReadLine()
+                    .Split(" ", StringSplitOptions.RemoveEmptyEntries);
 
-                string name = arguments[0];
-                int age = int.Parse(arguments[1]);
+                string name = input[0];
+                int age = int.Parse(input[1]);
 
-                var person = new Person(name, age);
+                //Instance person
+                Person person = new Person(name,age);
 
                 family.AddMember(person);
             }
 
-            var oldPerson = family.GetOldestMember();
+            Person oldestMember =  family.GetOldestMember();
 
-            Console.WriteLine($"{oldPerson.Name} {oldPerson.Age}");
+            Console.WriteLine(oldestMember);
         }
     }
 }
+
