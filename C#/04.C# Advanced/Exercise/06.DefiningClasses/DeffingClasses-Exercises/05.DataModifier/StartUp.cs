@@ -10,9 +10,8 @@ namespace DefiningClasses
             string firstData = Console.ReadLine();
             string secondDate = Console.ReadLine();
 
-            //Instancing
-
-            Console.WriteLine(DataModifier.Calculates(firstData,secondDate));
+            //Instance and print rezult
+            Console.WriteLine(DateModifier.Calculates(firstData,secondDate));
         }
     }
 }
