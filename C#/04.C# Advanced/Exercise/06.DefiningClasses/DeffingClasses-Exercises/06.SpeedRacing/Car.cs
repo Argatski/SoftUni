@@ -6,35 +6,34 @@ namespace DefiningClasses
 {
     public class Car
     {
-        //Proprties
+        //Properties
         public string Model { get; set; }
         public double FuelAmount { get; set; }
         public double FuelConsumptionPerKilometer { get; set; }
         public double TravelledDistance { get; set; }
 
-        //Constructors
+        //Construnctors
         public Car()
         {
-
         }
-        public Car(string model,double fuelAmount,double fuelConsumptionPerKilometer,double distance)
+        public Car(string model, double fuelAmount, double fuelConsumptionFor1km, double travelledDistance) : this()
         {
             Model = model;
             FuelAmount = fuelAmount;
-            FuelConsumptionPerKilometer = fuelConsumptionPerKilometer;
-            TravelledDistance = distance; 
+            FuelConsumptionPerKilometer = fuelConsumptionFor1km;
+            TravelledDistance = travelledDistance;
         }
 
+
         //Methods
-        public void Drive(double amountOfKm) 
+        public void Drive(double amountOfKm)
         {
             bool canMove = FuelAmount >= amountOfKm * FuelConsumptionPerKilometer;
 
             if (canMove)
             {
                 FuelAmount -= (amountOfKm * FuelConsumptionPerKilometer);
-
-                TravelledDistance += amountOfKm; 
+                TravelledDistance += amountOfKm;
             }
             else
             {
@@ -42,10 +41,13 @@ namespace DefiningClasses
             }
         }
 
-
+        /// <summary>
+        /// Print all cars
+        /// </summary>
+        /// <param name="cars"></param>
         public override string ToString()
         {
-            return $"{Model} {FuelAmount:f2} {TravelledDistance}";
+            return $"{Model} {FuelAmount:f2} {TravelledDistance}"; 
         }
     }
 }
