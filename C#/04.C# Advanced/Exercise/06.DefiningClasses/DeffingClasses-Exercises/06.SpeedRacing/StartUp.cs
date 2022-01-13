@@ -4,57 +4,50 @@ using System.Linq;
 
 namespace DefiningClasses
 {
-    class StartUo
+    class StartUp
     {
         static void Main(string[] args)
         {
             //Numbers of cars
             int number = int.Parse(Console.ReadLine());
 
-            List<Car> listCars = new List<Car>();
+            //Instance cars
+            List<Car> cars = new List<Car>();
+
 
             for (int i = 0; i < number; i++)
             {
-                string[] carsInfo = Console.ReadLine()
-                    .Split();
+                string[] input = Console.ReadLine()
+                    .Split(" ", StringSplitOptions.RemoveEmptyEntries);
+                string model = input[0];
+                double fuelAmount = double.Parse(input[1]);
+                double perKilometer = double.Parse(input[2]);
 
-                string model = carsInfo[0];
-                double fuelAmount = double.Parse(carsInfo[1]);
-                double fuelConsumptionForKm = double.Parse(carsInfo[2]);
-
-                //A car’s model is unique 
-                if (!listCars.Any(c=>c.Model.Contains(model)))
-                {
-                    Car car = new Car(model, fuelAmount, fuelConsumptionForKm, 0);
-
-                    listCars.Add(car);
-                }
-
+                //Instance car
+                Car car = new Car(model, fuelAmount, perKilometer, 0);
+                cars.Add(car);
             }
 
-            string input;
+            string command = string.Empty;
 
-            while ((input = Console.ReadLine()) != "End")
+            while ((command = Console.ReadLine()) != "End")
             {
-                string[] commandArgs = input.Split();
+                string[] input = command
+                    .Split(" ", StringSplitOptions.RemoveEmptyEntries);
 
-                string command = commandArgs[0];
-                
-
-                if (command =="Drive")
+                if (input[0] == "Drive")
                 {
-                    string model = commandArgs[1];
-                    double amountOfKm = double.Parse(commandArgs[2]);
+                    string model = input[1];
+                    double amountOfKm = double.Parse(input[2]);
 
-                    var car = listCars.Where(x => x.Model == model)
-                        .FirstOrDefault();
+                    Car currentCar = cars.Where(m => m.Model == model).FirstOrDefault();
 
-                    car.Drive(amountOfKm);
+                    currentCar.Drive(amountOfKm);
                 }
-
             }
 
-            foreach (var car in listCars)
+            //Print result
+            foreach (var car in cars)
             {
                 Console.WriteLine(car);
             }
