@@ -9,6 +9,7 @@ namespace DefiningClasses
         //Properties
         public string Model { get; set; }
 
+        //Properties of another's classes
         public Engine Engine { get; set; }
         public Cargo Cargo { get; set; }
         public Tire[] Tires { get; set; }
@@ -22,7 +23,7 @@ namespace DefiningClasses
             Tires = tires;
         }
 
-        //Print result
+        //Methods
         public override string ToString()
         {
             return $"{Model}";
