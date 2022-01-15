@@ -11,11 +11,10 @@ namespace DefiningClasses
         public int Power { get; set; }
 
         //Constructor
-        public Engine(int speed,int power)
+        public Engine(int speed, int power)
         {
             Speed = speed;
             Power = power;
         }
-        
     }
 }
