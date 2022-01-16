@@ -13,32 +13,34 @@ namespace DefiningClasses
         public string Efficiency { get; set; }
 
         //Constructors
-        //When we have information for Model engine and power
+        //When we have information about Model engine and power
         public Engine(string model, int power)
         {
             Model = model;
             Power = power;
-
         }
 
-        //When we have information for displacement engine
-        public Engine(string model, int power, int displacement) : this(model, power)
+        //When we have information about model,power and displacement engine
+        public Engine(string model, int power, int displacement)
+            : this(model, power)
         {
             Displacement = displacement;
         }
 
-        //When we have information for Efficiency engine
-        public Engine(string model, int power, string efficiency) : this(model, power)
+        //When we have information about model,power and efficiency engine
+        public Engine(string model, int power, string efficiency)
+            : this(model, power)
         {
             Efficiency = efficiency;
         }
-        //When we have information for All properties engine.
+
+        //When we have all information about engine
         public Engine(string model, int power, int displacement, string efficiency) : this(model, power, displacement)
         {
             Efficiency = efficiency;
         }
 
-        //Print methods
+        ///Print Methods
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
