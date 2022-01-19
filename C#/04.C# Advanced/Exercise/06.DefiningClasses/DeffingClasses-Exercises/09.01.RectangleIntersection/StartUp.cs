@@ -8,16 +8,16 @@ namespace DefiningClasses
     {
         static void Main(string[] args)
         {
-
-            
+            //Input
             int[] counts = Console.ReadLine()
-            .Split()
-            .Select(int.Parse)
-            .ToArray();
+                .Split()
+                .Select(int.Parse)
+                .ToArray();
 
+            //Instance
             List<Rectangle> rectangles = new List<Rectangle>();
-            
-            //Create Rectangle
+
+            //Create rectangle
             for (int i = 0; i < counts[0]; i++)
             {
                 var tokens = Console.ReadLine()
@@ -49,6 +49,8 @@ namespace DefiningClasses
                     Console.WriteLine("false");
                 }
             }
+
         }
     }
 }
+
