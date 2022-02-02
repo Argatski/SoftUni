@@ -20,7 +20,7 @@
 | <a> 04.Streams Files And Directiories</a> | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/04.C%23%20Advanced/Exercise/04.StreamsFilesAndDirectiories"> Link</a>|
 | <a> 05.Functional Programming </a>      | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/04.C%23%20Advanced/Exercise/05.FunctionalProgramming"> Link</a> |
 | <a> 06.Defining Classes </a>            | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/04.C%23%20Advanced/Exercise/06.DefiningClasses"> Link</a> |
-| <a> 07.ImplementingLinkedList </a>     | <a href=""> Link</a> |
+| <a> 07.Implementing LinkedList </a>     | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/04.C%23%20Advanced/Exercise/07.ImplementingLinkedList"> Link</a> |
 | <a> 08.Generics </a>                   | <a href=""> Link</a> |
 | <a> All</a> | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/04.C%23%20Advanced/Exercise"> Link</a> |
 
