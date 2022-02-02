@@ -7,5 +7,6 @@
     <li>Functional Programming</li>
     <li>Defining Classes</li>
     <li>Implementing Linked List</li>
+    <li>Implementing List and Stack</li>
     <li>Generics</li>
   </ol>
