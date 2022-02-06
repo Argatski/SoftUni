@@ -7,7 +7,24 @@ namespace _08.Implementing_List_and_Stack
     {
         static void Main(string[] args)
         {
-            
+            /*
+            CustomStack customStack = new CustomStack();
+            customStack.Push(10);
+            customStack.Push(20);
+            customStack.Push(30);
+            customStack.Push(40);
+            customStack.Push(50);
+            customStack.Push(60);
+            customStack.Push(70);
+            customStack.Push(80);
+
+            customStack.Peek();
+            customStack.Pop();
+            customStack.ForEach(x => Console.WriteLine(x));
+            */
+
+
+
             //Instace custom list
             CustomList list = new CustomList();
 
@@ -17,7 +34,9 @@ namespace _08.Implementing_List_and_Stack
                 list.Add(i);
             }
 
+            list.ForEach(x => Console.WriteLine(x));
 
+            /*
 
             ////Test RemoveAt
             //list.RemoveAt(1);
@@ -43,7 +62,7 @@ namespace _08.Implementing_List_and_Stack
 
             //Test Tostring method
             Console.WriteLine(list.Tostring());
-
+            */
         }
     }
 }
