@@ -45,6 +45,12 @@ namespace _08.Implementing_List_and_Stack
             this.array[this.Count] = element;
             this.Count++;
         }
+
+        /// <summary>
+        /// This method remove element at the given index
+        /// </summary>
+        /// <param name="index"></param>
+        /// <returns></returns>
         public int RemoveAt(int index)
         {
             this.IsValidIndex(index);
@@ -145,6 +151,14 @@ namespace _08.Implementing_List_and_Stack
             }
 
             return result.TrimEnd();
+        }
+
+        public void ForEach(Action<object> action)
+        {
+            for (int i = 0; i < this.Count; i++)
+            {
+                action(this.array[i]);
+            }
         }
 
         //Private methods
