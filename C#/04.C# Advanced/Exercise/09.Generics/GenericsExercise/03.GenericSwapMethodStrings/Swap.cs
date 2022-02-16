@@ -19,7 +19,12 @@ namespace GenericSwapMethodStrings
             list.Add(element);
         }
 
-        //Swap
+        /// <summary>
+        /// Use the method you've created to swap the elements that correspond to the given indexes and print each element in the list.
+        /// </summary>
+        /// <param name="firstIndex"></param>
+        /// <param name="secondIndex"></param>
+        /// <returns></returns>
         public List<T> SwapString(int firstIndex, int secondIndex)
         {
             var first = list[firstIndex];
@@ -27,18 +32,6 @@ namespace GenericSwapMethodStrings
             list[secondIndex] = first;
 
             return list;
-        }
-
-
-        /// <summary>
-        /// If collection is empty
-        /// </summary>
-        private void ChekckIfEmpty()
-        {
-            if (this.list.Count == null)
-            {
-                throw new InvalidOperationException("Collection is empty!");
-            }
         }
 
         //Print 
