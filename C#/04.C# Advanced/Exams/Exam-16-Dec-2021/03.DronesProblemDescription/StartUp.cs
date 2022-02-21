@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Drones
 {
@@ -36,11 +37,25 @@ namespace Drones
             Console.WriteLine(airfield.AddDrone(fifthDrone));
             Console.WriteLine(airfield.AddDrone(sixtDrone));
 
-            Console.WriteLine(airfield.Count);
 
-            //Remove drone by brand
-            Console.WriteLine(airfield.RemoveDroneByBrand("Cheeerwing"));
+            // Fly drone by name
+            Console.WriteLine(airfield.FlyDrone("CW4"));
 
+            Console.WriteLine("-----------------FlyDronesByRange-----------------");
+            List<Drone> flyDrones = airfield.FlyDronesByRange(10);
+
+            foreach (var flyDrone in flyDrones)
+            {
+                Console.Write(flyDrone);
+            }
+
+            // Remove drone by brand
+            Console.WriteLine(airfield.RemoveDroneByBrand("Cheerwing"));
+
+            Console.WriteLine("----------------------Report----------------------");
+            Console.WriteLine(airfield.Report());
+
+            
         }
     }
 }
