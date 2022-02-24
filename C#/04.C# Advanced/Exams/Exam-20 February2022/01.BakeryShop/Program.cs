@@ -26,16 +26,51 @@ namespace _01.BakeryShop
 
             //Processing
             Dictionary<string, int> products = Processing(water, flour);
+
+            //Print outpyt
+            Print(products, water, flour);
+        }
+
+        private static void Print(Dictionary<string, int> products, Queue<double> water, Stack<double> flour)
+        {
+
+            //First line print only products which were baked successfully and how many of them, ordered by amount baked descending, then by product name alphabetically:
+            foreach (var product in products.OrderByDescending(v => v.Value).ThenBy(k=>k.Key))
+            {
+                Console.WriteLine($"{product.Key}: {product.Value}");
+            }
+
+            //the second line - print all water you have left.
+            if (water.Count > 0)
+            {
+                Console.Write("Water left: ");
+                Console.WriteLine(string.Join(", ", water));
+            }
+            else
+            {
+                Console.WriteLine("Water left: None");
+            }
+
+            //The third line - print all flour you have left:
+            if (flour.Count > 0)
+            {
+                Console.Write("Flour left: ");
+                Console.WriteLine(string.Join(", ", flour));
+            }
+            else
+            {
+                Console.WriteLine("Flour left: None");
+            }
         }
 
         private static Dictionary<string, int> Processing(Queue<double> waters, Stack<double> flours)
         {
             Dictionary<string, int> result = new Dictionary<string, int>();
 
-            while (waters.Count == 0 && flours.Count == 0)
+            while (waters.Count > 0 && flours.Count > 0)
             {
-                double water = waters.Peek();
-                double flour = flours.Peek();
+                double water = waters.Dequeue();
+                double flour = flours.Pop();
 
                 double percentageWater = Calculate(water, flour);
                 double percentageFlour = Calculate(flour, water);
@@ -61,15 +96,26 @@ namespace _01.BakeryShop
 
                     AddProduct(result, nameProduct);
                 }
+                else if(percentageWater == 20 && percentageFlour == 80)
+                {
+                    nameProduct = "Bagel";
+
+                    AddProduct(result, nameProduct);
+                }
                 else
                 {
                     nameProduct = "Croissant";
+
+                    double difference = flour - water;
+
+                    flours.Push(difference);
 
                     AddProduct(result, nameProduct);
                 }
             }
 
             return result;
+
 
         }
 
