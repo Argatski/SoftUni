@@ -1,163 +1,232 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
-namespace _02.BeaverAtWork
+namespace _02_Beaver_at_Work
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        private static int beaverRow;
+        private static int beaverCol;
+        private static char[,] matrix;
+        private static string lastDirection;
+
+        private static List<char> branches = new List<char>();
+        private static int totalBranches = 0;
+
+        public static void Main()
         {
-            //•	On the first line – integer n – the size of the pond (field).
-            int sizePond = int.Parse(Console.ReadLine());
+            int n = int.Parse(Console.ReadLine());
 
-            char[,] pond = new char[sizePond, sizePond];
+            matrix = new char[n, n];
 
-            //Create matrix (Pond).
-            int[] positionBeaver = CreateMatrix(pond);
-
-            //Start move breaver
-            Processing(positionBeaver, pond);
-
-            //Print
-            Print(pond);
-            Console.WriteLine(string.Join(" ", positionBeaver));
-        }
-
-        /// <summary>
-        /// Start move Breaver.
-        /// </summary>
-        /// <param name="positionBeaver"></param>
-        /// <param name="pond"></param>
-        private static void Processing(int[] positionBeaver, char[,] pond)
-        {
-            string command = string.Empty;
-            while ((command = Console.ReadLine()) != "end")
+            //Initialize Matrix and set bunny position
+            for (int i = 0; i < n; i++)
             {
-                switch (command)
-                {
-                    case "up":
-                        MoveUpBreaver(positionBeaver, pond);
+                char[] input = Console.ReadLine()
+                    .Replace(" ", "")
+                    .ToCharArray();
 
-                        //Print current result.
-                        Print(pond);
-                        break;
-                    default:
-                        break;
+                for (int j = 0; j < input.Length; j++)
+                {
+                    matrix[i, j] = input[j];
+
+                    if (matrix[i, j] == 'B')
+                    {
+                        beaverRow = i;
+                        beaverCol = j;
+                    }
+                    else if (char.IsLower(matrix[i, j]))
+                    {
+                        totalBranches++;
+                    }
                 }
             }
-        }
 
-        private static void MoveUpBreaver(int[] positionBeaver, char[,] pond)
-        {
-            int currentRow = positionBeaver[0] - 1;
+            //Processing
+            string direction = Console.ReadLine();
 
-            if (currentRow >= 0)
+            while (direction != "end")
             {
-                char currentSymbol = pond[currentRow, positionBeaver[1]];
-                if (currentSymbol == 'F')
+                lastDirection = direction;
+
+                if (direction == "up")
                 {
-                    positionBeaver[0] = currentRow;
-
-                    BreaverSwimUp(positionBeaver, pond);
+                    Move(-1, 0);
                 }
-                else if (char.IsLower(currentSymbol))
+                else if (direction == "down")
                 {
-                    pond[positionBeaver[0], positionBeaver[1]] = '-';
-
-                    positionBeaver[0] = currentRow;
-
-                    pond[positionBeaver[0], positionBeaver[1]] = 'B';
+                    Move(1, 0);
                 }
+                else if (direction == "right")
+                {
+                    Move(0, 1);
+                }
+                else if (direction == "left")
+                {
+                    Move(0, -1);
+                }
+
+                if (totalBranches == 0)
+                {
+                    break;
+                }
+                direction = Console.ReadLine();
             }
-        }
 
-        private static void BreaverSwimUp(int[] positionBeaver, char[,] pond)
-        {
-            //Swim down
-            if (positionBeaver[0] == 0)
+            //Print result
+            if (totalBranches > 0)
             {
-                //Swim and change all except the last index.
-                for (int r = 0; r < pond.GetLength(0) - 2; r++)
-                {
-                    pond[r, positionBeaver[1]] = '-';
-                }
-                int rowIndex = pond.GetLength(0) - 1;
-
-                pond[rowIndex, positionBeaver[1]] = 'B';
-
-                //The new position of breaver.
-                positionBeaver[0] = rowIndex;
-
+                Console.WriteLine($"The Beaver failed to collect every wood branch. There are {totalBranches} branches left.");
             }
             else
             {
-                for (int r = positionBeaver[0] + 1; r >= 1; r--)
-                {
-                    pond[r, positionBeaver[1]] = '-';
-                }
-
-                //Change last position of Breaver.
-
-
-                //The new position of breaver.
-                pond[0, positionBeaver[1]] = 'B';
-
-                positionBeaver[0] = 0;
+                Console.WriteLine($"The Beaver successfully collect {branches.Count} wood branches: {string.Join(", ", branches)}.");
             }
-            /*else if (positionBeaver[0] == pond.GetLength(0) - 1)
+
+            for (int i = 0; i < matrix.GetLength(0); i++)
             {
-                for (int r = pond.GetLength(0) - 1; r >= 0; r--)
+                for (int j = 0; j < matrix.GetLength(1); j++)
                 {
-                    pond[r, positionBeaver[1]] = '-';
-                }
-
-                int rowIndex = 0;
-
-                pond[rowIndex, positionBeaver[1]] = 'B';
-
-                //The last position of breaver.
-                positionBeaver[0] = rowIndex;
-            }
-            */
-        }
-
-        private static void Print(char[,] pond)
-        {
-            for (int r = 0; r < pond.GetLength(0); r++)
-            {
-                for (int c = 0; c < pond.GetLength(1); c++)
-                {
-                    Console.Write(pond[r, c]);
+                    Console.Write((char)matrix[i, j]);
+                    Console.Write(' ');
                 }
                 Console.WriteLine();
             }
         }
 
         /// <summary>
-        /// Create pond (matrix).
+        /// Move breaver.
         /// </summary>
-        /// <param name="pond"></param>
-        private static int[] CreateMatrix(char[,] pond)
+        /// <param name="row"></param>
+        /// <param name="col"></param>
+        private static void Move(int row, int col)
         {
-            int[] position = new int[2];
-            for (int r = 0; r < pond.GetLength(0); r++)
+            if (!IsInside(beaverRow + row, beaverCol + col))
             {
-                char[] input = Console.ReadLine()
-                    .Split(" ", StringSplitOptions.RemoveEmptyEntries)
-                    .Select(char.Parse)
-                    .ToArray();
-
-                for (int c = 0; c < input.Length; c++)
+                if (branches.Any())
                 {
-                    if (input[c] == 'B')
+                    branches.Remove(branches[branches.Count - 1]);
+                }
+                return;
+            }
+            matrix[beaverRow, beaverCol] = '-';
+            beaverRow += row;
+            beaverCol += col;
+
+            if (char.IsLower(matrix[beaverRow, beaverCol]))
+            {
+                branches.Add(matrix[beaverRow, beaverCol]);
+                matrix[beaverRow, beaverCol] = 'B';
+                totalBranches--;
+            }
+            else if (matrix[beaverRow, beaverCol] == 'F')
+            {
+                matrix[beaverRow, beaverCol] = '-';
+
+                if (lastDirection == "up")
+                {
+                    if (beaverRow == 0)
                     {
-                        position[0] = r;
-                        position[1] = c;
+                        if (char.IsLower(matrix[matrix.GetLength(0) - 1, beaverCol]))
+                        {
+                            branches.Add(matrix[matrix.GetLength(0) - 1, beaverCol]);
+                            totalBranches--;
+                        }
+                        beaverRow = matrix.GetLength(0) - 1;
+                        matrix[beaverRow, beaverCol] = 'B';
                     }
-                    pond[r, c] = input[c];
+                    else
+                    {
+                        if (char.IsLower(matrix[0, beaverCol]))
+                        {
+                            branches.Add(matrix[0, beaverCol]);
+                            totalBranches--;
+                        }
+                        beaverRow = 0;
+                        matrix[beaverRow, beaverCol] = 'B';
+                    }
+                }
+                else if (lastDirection == "down")
+                {
+                    if (beaverRow == matrix.GetLength(0) - 1)
+                    {
+                        if (char.IsLower(matrix[0, beaverCol]))
+                        {
+                            branches.Add(matrix[0, beaverCol]);
+                            totalBranches--;
+                        }
+                        beaverRow = 0;
+                        matrix[beaverRow, beaverCol] = 'B';
+                    }
+                    else
+                    {
+                        if (char.IsLower(matrix[matrix.GetLength(0) - 1, beaverCol]))
+                        {
+                            branches.Add(matrix[matrix.GetLength(0) - 1, beaverCol]);
+                            totalBranches--;
+                        }
+                        beaverRow = matrix.GetLength(0) - 1;
+                        matrix[beaverRow, beaverCol] = 'B';
+                    }
+                }
+                else if (lastDirection == "right")
+                {
+                    if (beaverCol == matrix.GetLength(1) - 1)
+                    {
+                        if (char.IsLower(matrix[beaverRow, 0]))
+                        {
+                            branches.Add(matrix[beaverRow, 0]);
+                            totalBranches--;
+                        }
+                        beaverCol = 0;
+                        matrix[beaverRow, beaverCol] = 'B';
+                    }
+                    else
+                    {
+                        if (char.IsLower(matrix[beaverRow, matrix.GetLength(1) - 1]))
+                        {
+                            branches.Add(matrix[beaverRow, matrix.GetLength(1) - 1]);
+                            totalBranches--;
+                        }
+                        beaverCol = matrix.GetLength(1) - 1;
+                        matrix[beaverRow, beaverCol] = 'B';
+                    }
+                }
+                else if (lastDirection == "left")
+                {
+                    if (beaverCol == 0)
+                    {
+                        if (char.IsLower(matrix[beaverRow, matrix.GetLength(1) - 1]))
+                        {
+                            branches.Add(matrix[beaverRow, matrix.GetLength(1) - 1]);
+                            totalBranches--;
+                        }
+                        beaverCol = matrix.GetLength(1) - 1;
+                        matrix[beaverRow, beaverCol] = 'B';
+                    }
+                    else
+                    {
+                        if (char.IsLower(matrix[beaverRow, 0]))
+                        {
+                            branches.Add(matrix[beaverRow, 0]);
+                            totalBranches--;
+                        }
+                        beaverCol = 0;
+                        matrix[beaverRow, beaverCol] = 'B';
+                    }
                 }
             }
-            return position;
+            else
+            {
+                matrix[beaverRow, beaverCol] = 'B';
+            }
+        }
+
+        private static bool IsInside(int row, int col)
+        {
+            return row >= 0 && row < matrix.GetLength(0) &&
+                   col >= 0 && col < matrix.GetLength(1);
         }
     }
 }
