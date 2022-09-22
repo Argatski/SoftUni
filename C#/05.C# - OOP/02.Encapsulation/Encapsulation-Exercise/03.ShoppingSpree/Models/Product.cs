@@ -1,7 +1,9 @@
-﻿using System;
-
-namespace ShoppingSpree
+﻿namespace ShoppingSpree.Models
 {
+    using System;
+
+    using Exceptions;
+
     public class Product
     {
         private string name;
@@ -11,47 +13,46 @@ namespace ShoppingSpree
         {
             this.Name = name;
             this.Cost = cost;
-
-        }
-        public decimal Cost
-        {
-            get { return this.cost; }
-            private set
-            {
-                ValidateCost(value);
-                this.cost = value;
-            }
         }
 
         public string Name
         {
-            get { return this.name; }
+            get => this.name;
+
             private set
             {
-                ValidateName(value);
+                this.ValidateName(value);
+
                 this.name = value;
             }
-
         }
 
-        private void ValidateName(string value)
+        public decimal Cost
         {
-            if (string.IsNullOrEmpty(value)||string.IsNullOrWhiteSpace(value))
+            get => this.cost;
+
+            private set
             {
-                throw new ArgumentException(GlobalConstants.EmptyNameExcMsg);
-            };
-        }
-        private void ValidateCost(decimal value)
-        {
-            if (value < 0)
-            {
-                throw new ArgumentException(GlobalConstants.EmptyMoneyExcMsg);
+                this.ValidateCost(value);
+
+                this.cost = value;
             }
         }
 
-        public override string ToString()
+        private void ValidateName(string targetName)
         {
-            return this.Name;
+            if (string.IsNullOrEmpty(targetName) || string.IsNullOrWhiteSpace(targetName))
+            {
+                throw new ArgumentException(ExceptionMessages.NullOrEmptyNameException);
+            }
+        }
+
+        private void ValidateCost(decimal targetMoney)
+        {
+            if (targetMoney < 0)
+            {
+                throw new ArgumentException(ExceptionMessages.NegativeMoneyException);
+            }
         }
     }
 }

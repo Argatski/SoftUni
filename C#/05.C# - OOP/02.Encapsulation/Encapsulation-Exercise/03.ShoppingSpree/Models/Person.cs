@@ -1,98 +1,106 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ShoppingSpree
+﻿namespace ShoppingSpree.Models
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
+    using Exceptions;
+
     public class Person
     {
-        private const string notEnoughtMoney = "{0} can't afford {1}";
-        private const string buyProduct = "{0} bought {1}";
-
         private string name;
         private decimal money;
-        private readonly ICollection<Product> bagOfProducts;
+        private List<Product> products;
 
-        private Person()
-        {
-            this.bagOfProducts = new List<Product>();
-        }
         public Person(string name, decimal money)
-            : this()
         {
-            //Variand -2
             this.Name = name;
             this.Money = money;
-
-            //Variant  - 1
-            /*
-            this.bagOfProducts = new List<Product>();
-            this.Name = name;
-            this.Money = money;
-            */
+            this.products = new List<Product>();
         }
+
         public string Name
         {
-            get { return this.name; }
+            get => this.name;
+
             private set
             {
-                isValidName(value);
+                this.ValidateName(value);
+
                 this.name = value;
             }
         }
 
         public decimal Money
         {
-            get { return this.money; }
+            get => this.money;
+
             private set
             {
-                isValidMoney(value);
+                this.ValidateMoney(value);
+
                 this.money = value;
             }
         }
 
-        public IReadOnlyCollection<Product> BagOfProducts
-        {
-            get { return (IReadOnlyCollection<Product>)this.bagOfProducts; }
-        }
-        //Methods
-        /// <summary>
-        /// If the person can afford a product, add it to his bag. If a person doesn’t have enough money, print an appropriate message ("{personName} can't afford {productName}").
-        /// </summary>
-        /// <param name="product"></param>
-        /// <returns></returns>
-        public string AddProductToBag(Product product)
+        public string AddProductsToBag(Product product)
         {
             if (this.Money < product.Cost)
             {
-                throw new ArgumentException(string.Format(notEnoughtMoney, this.Name, product.Name));
+                throw new InvalidOperationException(
+                    string.Format(
+                        ExceptionMessages.CannotAffordProductException,
+                        this.Name,
+                        product.Name));
             }
-            this.Money -= product.Cost;
-            this.bagOfProducts.Add(product);
 
-            return string.Format(buyProduct, this.Name, product.Name);
+            this.Money -= product.Cost;
+            this.products.Add(product);
+
+            return $"{this.Name} bought {product.Name}";
         }
 
         public override string ToString()
         {
-            string productsOutput = this.bagOfProducts.Count > 0 ? string.Join(", ", this.bagOfProducts) : "Nothing bought";
+            var result = new StringBuilder();
 
+            if (this.products.Count == 0)
+            {
+                result.AppendLine($"{this.Name} - Nothing bought");
+            }
+            else
+            {
+                result.AppendLine($"{this.Name} - {string.Join(", ", this.GetProductsNames())}");
+            }
 
-            return $"{this.Name} - {productsOutput}";
+            return result.ToString().TrimEnd();
         }
 
-        private void isValidName(string value)
+        private List<string> GetProductsNames()
         {
-            if (string.IsNullOrEmpty(value) || string.IsNullOrWhiteSpace(value))
+            var productsNames = new List<string>();
+
+            foreach (var product in this.products)
             {
-                throw new ArgumentException(GlobalConstants.EmptyNameExcMsg);
+                productsNames.Add(product.Name);
+            }
+
+            return productsNames;
+        }
+
+        private void ValidateMoney(decimal targetMoney)
+        {
+            if (targetMoney < 0)
+            {
+                throw new ArgumentException(ExceptionMessages.NegativeMoneyException);
             }
         }
-        private void isValidMoney(decimal value)
+
+        private void ValidateName(string targetName)
         {
-            if (value < 0)
+            if (string.IsNullOrEmpty(targetName) || string.IsNullOrWhiteSpace(targetName))
             {
-                throw new ArgumentException(GlobalConstants.EmptyMoneyExcMsg);
+                throw new ArgumentException(ExceptionMessages.NullOrEmptyNameException);
             }
         }
     }

@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace ShoppingSpree
+﻿namespace ShoppingSpree
 {
+    using Core;
+
     public class StartUp
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            Engine engine = new Engine();
+            var engine = new Engine();
             engine.Run();
-
         }
     }
 }
