@@ -1,4 +1,4 @@
-﻿namespace ShoppingSpree.Exceptions
+﻿namespace ShoppingSpree
 {
     public static class ExceptionMessages
     {
