@@ -10,5 +10,7 @@ namespace FootballTeamGenerator
         public static string invalidStats = "{0} should be between 0 and 100.";
 
         public static string missingPlayer = "Player {0} is not in {1} team.";
+
+        public static string invalidTeamNema = "Team {0} does not exist.";
     }
 }
