@@ -54,5 +54,9 @@ namespace FootballTeamGenerator
             this.players.Remove(playerRemove);
         }
 
+        public override string ToString()
+        {
+            return $"{this.Name} - {this.Raiting}";
+        }
     }
 }

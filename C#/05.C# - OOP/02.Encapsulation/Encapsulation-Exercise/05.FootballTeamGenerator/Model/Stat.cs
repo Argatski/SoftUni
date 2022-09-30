@@ -15,7 +15,7 @@ namespace FootballTeamGenerator
         private int passing;
         private int shooting;
 
-        public Stat(int endurance, int sprint, int dribble, int passing, int shootng)
+        public Stat(int endurance, int sprint, int dribble, int passing, int shooting)
         {
             this.Endurance = endurance;
             this.Sprint = sprint;
