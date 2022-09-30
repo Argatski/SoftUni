@@ -6,7 +6,10 @@ namespace FootballTeamGenerator
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var commandParser = new CommandParser();
+            var engine = new Engine(commandParser);
+
+            engine.Run();
         }
     }
 }
