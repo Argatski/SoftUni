@@ -19,7 +19,7 @@ namespace Raiding.Core
         {
             int number = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i < number; i++)
+            while (collection.Count != number)
             {
                 string name = Console.ReadLine();
                 string type = Console.ReadLine();
@@ -34,6 +34,7 @@ namespace Raiding.Core
                     Console.WriteLine(ex.Message);
                 }
             }
+
             double bossPower = double.Parse(Console.ReadLine());
 
             foreach (var hero in collection)
