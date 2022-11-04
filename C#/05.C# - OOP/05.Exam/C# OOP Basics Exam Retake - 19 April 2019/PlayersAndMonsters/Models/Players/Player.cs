@@ -9,6 +9,7 @@ namespace PlayersAndMonsters.Models.Players
         private const string INVALID_USER_NAME = "Player's username cannot be null or an empty string.";
         private const string HEALTH_LESS_ZERO = "Player's health bonus cannot be less than zero.";
         private const string DAMAGE_LESS_ZERO = "Damage points cannot be less than zero.";
+
         private string name;
         private int health;
 
@@ -22,6 +23,7 @@ namespace PlayersAndMonsters.Models.Players
         public ICardRepository CardRepository
         {
             get;
+            private set;
         }
 
         public string Username
@@ -29,7 +31,7 @@ namespace PlayersAndMonsters.Models.Players
             get { return this.name; }
             private set
             {
-                if (string.IsNullOrEmpty(value))
+                if (string.IsNullOrWhiteSpace(value))
                 {
                     throw new ArgumentException(INVALID_USER_NAME);
                 }
@@ -53,7 +55,7 @@ namespace PlayersAndMonsters.Models.Players
             }
         }
 
-        public bool IsDead => this.Health >= 0;
+        public bool IsDead => this.Health == 0;
 
         public void TakeDamage(int damagePoints)
         {
@@ -61,10 +63,13 @@ namespace PlayersAndMonsters.Models.Players
             {
                 throw new ArgumentException(DAMAGE_LESS_ZERO);
             }
-            if (this.IsDead == true)
+            if (this.Health - damagePoints < 0)
             {
                 this.Health -= damagePoints;
-
+            }
+            else
+            {
+                this.Health -= damagePoints;
             }
         }
     }
