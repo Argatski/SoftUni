@@ -25,7 +25,7 @@ namespace PlayersAndMonsters.Models.Cards
             get { return this.name; }
             private set
             {
-                if (string.IsNullOrEmpty(value))
+                if (string.IsNullOrWhiteSpace(value))
                 {
                     throw new ArgumentException(INVALID_CARD);
                 }
