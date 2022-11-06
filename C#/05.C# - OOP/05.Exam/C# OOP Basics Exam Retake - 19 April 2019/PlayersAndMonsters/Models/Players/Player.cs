@@ -1,4 +1,5 @@
-﻿using PlayersAndMonsters.Models.Players.Contracts;
+﻿using PlayersAndMonsters.Common;
+using PlayersAndMonsters.Models.Players.Contracts;
 using PlayersAndMonsters.Repositories.Contracts;
 using System;
 
@@ -65,12 +66,19 @@ namespace PlayersAndMonsters.Models.Players
             }
             if (this.Health - damagePoints < 0)
             {
-                this.Health -= damagePoints;
+                this.Health = 0;
             }
             else
             {
                 this.Health -= damagePoints;
             }
+        }
+
+        public override string ToString()
+        {
+            //$"Username: {this.Username} - Health: {this.Health} – Cards {this.CardRepository.Count}"
+
+            return string.Format(ConstantMessages.PlayerReportInfo, this.Username, this.Health, this.CardRepository.Count);
         }
     }
 }
