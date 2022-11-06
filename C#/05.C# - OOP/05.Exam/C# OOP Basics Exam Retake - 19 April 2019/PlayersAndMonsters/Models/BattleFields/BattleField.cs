@@ -1,4 +1,5 @@
-﻿using PlayersAndMonsters.Models.BattleFields.Contracts;
+﻿using PlayersAndMonsters.Common;
+using PlayersAndMonsters.Models.BattleFields.Contracts;
 using PlayersAndMonsters.Models.Players;
 using PlayersAndMonsters.Models.Players.Contracts;
 using System;
@@ -11,7 +12,7 @@ namespace PlayersAndMonsters.Models.BattleFields
         private const string PlayerDead = "Player is dead!";
         public void Fight(IPlayer attackPlayer, IPlayer enemyPlayer)
         {
-            if (enemyPlayer.IsDead || attackPlayer.IsDead)
+            if (attackPlayer.IsDead || enemyPlayer.IsDead)
             {
                 throw new ArgumentException(PlayerDead);
             }
@@ -53,8 +54,8 @@ namespace PlayersAndMonsters.Models.BattleFields
                 {
                     break;
                 }
+
             }
         }
-
     }
 }
