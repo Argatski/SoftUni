@@ -42,7 +42,7 @@ namespace PlayersAndMonsters.Repositories
         {
             if (card == null)
             {
-                throw new ArgumentNullException(CardIsNull);
+                throw new ArgumentException(CardIsNull);
             }
         }
     }
