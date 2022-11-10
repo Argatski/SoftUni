@@ -1,10 +1,7 @@
-﻿namespace GrandPrix.Models.Tyres
+﻿public class HardTyre : Tyre
 {
-    public class HardTyre : Tyre
+    public HardTyre(double hardness)
+        : base("Hard", hardness)
     {
-        public HardTyre(string name, double hardness)
-            : base("Hard", hardness)
-        {
-        }
     }
 }
