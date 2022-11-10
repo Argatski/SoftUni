@@ -1,42 +1,45 @@
-﻿using GrandPrix.Exception;
-using GrandPrix.Models.Tyres.Contract;
-using System;
+﻿using System;
 
-namespace GrandPrix.Models.Tyres
+public abstract class Tyre
 {
-    public abstract class Tyre : ITyre
+    private string name;
+    private double hardness;
+    private double degradation;
+
+    protected Tyre(string name, double hardness)
     {
-        private double startPointDegradation = 100;
-        private string name;
-        private double hardness;
-        private double degradation;
+        this.Name = name;
+        this.Hardness = hardness;
+        this.Degradation = 100;
+    }
 
-        public Tyre(string name, double hardness)
+    public virtual double Degradation
+    {
+        get { return this.degradation; }
+        protected set
         {
-            this.Name = name;
-            this.Hardness = hardness;
-            this.Degradation = degradation;
-        }
-        public string Name { get { return this.name; } private set { this.name = value; } }
-
-        public double Hardness { get {return this.hardness; } private set { this.hardness = value; } }
-
-        public virtual double Degradation
-        {
-            get { return this.startPointDegradation; }
-            protected set
+            if (value < 0)
             {
-                if (value < 0)
-                {
-                    throw new ArgumentException(ErroMessage.TyreDegradation);
-                }
-                this.degradation = value;
+                throw new ArgumentException(ErrorMessage.BlownTyre);
             }
+            this.degradation = value;
         }
-        public virtual void ReduceDegradation()
-        {
-            this.Degradation -= this.Hardness;
-        }
+    }
 
+    public double Hardness
+    {
+        get { return this.hardness; }
+        private set { this.hardness = value; }
+    }
+
+    public string Name
+    {
+        get { return this.name; }
+        private set { this.name = value; }
+    }
+
+    public virtual void ReducedDegradation()
+    {
+        this.Degradation -= this.Hardness;
     }
 }
