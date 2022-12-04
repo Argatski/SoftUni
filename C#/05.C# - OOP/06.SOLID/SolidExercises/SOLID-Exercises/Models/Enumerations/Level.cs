@@ -9,7 +9,7 @@ namespace SOLID_Exercises.Models.Enumerations
         INFO,
         WARNING,
         ERROR,
-        CRITTICAL,
+        CRITICAL,
         FATAL
     }
 }
