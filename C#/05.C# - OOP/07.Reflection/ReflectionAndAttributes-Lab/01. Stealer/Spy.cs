@@ -10,7 +10,7 @@ namespace Stealer
     {
         public string StealFieldInfo(string investigatedClass, params string[] requestedFields)
         {
-            Type classType = Type.GetType(investigatedClass);
+            Type classType = Type.GetType($"{investigatedClass}");
             FieldInfo[] classFields = classType.GetFields(BindingFlags.Instance | BindingFlags.Static | BindingFlags.NonPublic | BindingFlags.Public);
 
             StringBuilder stb = new StringBuilder();
