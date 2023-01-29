@@ -3,6 +3,7 @@ namespace DatabaseExtended.Tests
 {
     using ExtendedDatabase;
     using NUnit.Framework;
+    using NUnit.Framework.Internal;
     using System;
     using System.ComponentModel;
 
@@ -43,7 +44,7 @@ namespace DatabaseExtended.Tests
             Assert.AreEqual(expResult, actualResult);
 
         }
-
+        //AddMethods
         [Test]
         public void DatabaseAddMethodsShouldWorkCorrectly()
         {
@@ -101,6 +102,7 @@ namespace DatabaseExtended.Tests
             Assert.Throws<InvalidOperationException>(() => this.database.Add(person));
         }
 
+        //RemoveMethods
         [Test]
         public void MethodRemoveWorkCorrectly()
         {
@@ -111,6 +113,83 @@ namespace DatabaseExtended.Tests
 
             //Assert
             Assert.AreEqual(expCount, actualCount);
+        }
+
+        [Test]
+        public void DatabaseRemoveMethodShouldThrowExceptionIfDatabaseIsEmpty()
+        {
+            //Aggage
+            var data = new Database();
+
+            //Assert
+            Assert.Throws<InvalidOperationException>(() => data.Remove());
+        }
+
+        [Test]
+        public void DatabaseFindByUsernameMethodShouldWorkCorrectly()
+        {
+            //Arrage
+            var expectedResult = "Pesho";
+            var actualResult = database.FindByUsername("Pesho").UserName;
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        public void DatabaseFindByUsernameMethodShouldBeCaseSensitive()
+        {
+            //Arrage-Action
+            var notExpectedResult = "peSHo";
+            var actualResult = this.database.FindByUsername("Pesho").UserName;
+
+            //Assert
+            Assert.AreNotEqual(notExpectedResult, actualResult);
+        }
+
+        [Test]
+        [TestCase("")]
+        [TestCase(null)]
+        public void DatabaseFindByUsernameMethodShouldThrowExceptionIfUsernameIsNull(string name)
+        {
+            //Assert
+            Assert.Throws<ArgumentNullException>(() => this.database.FindByUsername(name));
+        }
+
+        [Test]
+        [TestCase("Kircho")]
+        [TestCase("Mircho")]
+        public void DatabaseFindByUsernameMethodShouldThrowExceptionIfUsernameIsNotFound(string userName)
+        {
+            //Assert
+            Assert.Throws<InvalidOperationException>(() => this.database.FindByUsername(userName));
+        }
+
+        [Test]
+        public void DatabaseFindByIdMethodShouldWorkCorrectly()
+        {
+            //Arrage-Action
+            var expectedResult = "Gosho";
+            var actualResult = this.database.FindById(2).UserName;
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        [TestCase(-1)]
+        [TestCase(-5)]
+        public void DatabaseFindByIdMethodShouldThrowExceptionIfIdIsNegative(int id)
+        {
+            //Asseert
+            Assert.Throws<ArgumentOutOfRangeException>(() => this.database.FindById(id));
+        }
+
+        [Test]
+        public void DatabaseFindByIdMethodShouldThrowExceptionIfIdIsNotFound()
+        {
+            //Assert
+            Assert.Throws<InvalidOperationException>(() => this.database.FindById(25));
         }
     }
 }
