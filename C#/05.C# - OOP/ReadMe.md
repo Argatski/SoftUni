@@ -18,10 +18,10 @@
 | <a> 02.Encapsulation </a>    | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/02.Encapsulation"> Link</a> |
 | <a> 03.Interfaces And Abstraction-Exercise </a>  | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/03.InterfacesAndAbstraction"> Link</a> |
 | <a> 04.Streams Files And Directiories</a> | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/04.C%23%20Advanced/Exercise/04.StreamsFilesAndDirectiories"> Link</a>|
-| <a> 05.Functional Programming </a>      | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/04.C%23%20Advanced/Exercise/05.FunctionalProgramming"> Link</a> |
-| <a> 06.Defining Classes </a>            | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/04.C%23%20Advanced/Exercise/06.DefiningClasses"> Link</a> |
-| <a> 07.Implementing LinkedList </a>     | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/04.C%23%20Advanced/Exercise/07.ImplementingLinkedList"> Link</a> |
-| <a> 08.Implementing List and Stack  </a> | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/04.C%23%20Advanced/Exercise/08.Implementing%20List%20and%20Stack"> Link</a> |
+| <a> 05.ExceptionsAndError </a>      | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/05.ExceptionsAndError/ExceptionsAndErrorHandlingLab"> Link</a> |
+| <a> 06.SOLID </a>            | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/06.SOLID"> Link</a> |
+| <a> 07.Reflection </a>     | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/07.Reflection"> Link</a> |
+| <a> 08.UnitTesting  </a> | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/08.UnitTesting"> Link</a> |
 | <a> 09.Generics </a>                   | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/04.C%23%20Advanced/Exercise/09.Generics"> Link</a> |
 | <a> All</a> | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/04.C%23%20Advanced/Exercise"> Link</a> |
 
