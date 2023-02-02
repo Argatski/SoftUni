@@ -14,7 +14,7 @@
 
 | **Content Exersice**                                                            | **Link**                                                   |
 | --------------------------------------------------------------------- | ---------------------------------------------------------- |
-| <a> 01.Inheritance-Exercise </a>            | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/01.Inheritance_!"> Link</a> |
+| <a> 01.Inheritance-Exercise </a>            | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/Exercise/01.Inheritance_!"> Link</a> |
 | <a> 02.Encapsulation </a>    | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/02.Encapsulation"> Link</a> |
 | <a> 03.Interfaces And Abstraction-Exercise </a>  | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/03.InterfacesAndAbstraction"> Link</a> |
 | <a> 04.Streams Files And Directiories</a> | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/04.C%23%20Advanced/Exercise/04.StreamsFilesAndDirectiories"> Link</a>|
