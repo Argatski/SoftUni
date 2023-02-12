@@ -8,5 +8,5 @@
     <li>SOLID</li>
     <li>Reflection</li>
     <li>UnitTesting</li>
-    <li>Generics</li>
+    <li>MockingAndTestDruven</li>
   </ol>
