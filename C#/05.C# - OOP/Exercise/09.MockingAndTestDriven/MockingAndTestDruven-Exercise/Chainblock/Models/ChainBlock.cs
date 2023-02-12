@@ -29,17 +29,49 @@ namespace Chainblock.Models
 
         public void ChangeTransactionStatus(int id, TransactionStatus newStatus)
         {
-            throw new NotImplementedException();
+            if (id <= 0)
+            {
+                throw new ArgumentException("Id cannot be less or queal to 0");
+            }
+            if (Enum.IsDefined(typeof(TransactionStatus), newStatus) == false)
+            {
+                throw new InvalidOperationException();
+            }
+            if (this._transactions.ContainsKey(id) == false)
+            {
+                throw new ArgumentException();
+            }
+
+            var transaction = this._transactions[id];
+
+            if (transaction.Status == newStatus)
+            {
+                throw new InvalidOperationException();
+            }
+            transaction.Status = newStatus;
         }
 
         public bool Contains(ITransaction tx)
         {
-            throw new NotImplementedException();
+            if (this._transactions.ContainsValue(tx))
+            {
+                return true;
+            }
+            return false;
         }
 
         public bool Contains(int id)
         {
-            throw new NotImplementedException();
+            if (id <= 0)
+            {
+                throw new ArgumentException();
+            }
+            if (this._transactions.ContainsKey(id))
+            {
+                return true;
+            }
+
+            return false;
         }
 
         public IEnumerable<ITransaction> GetAllInAmountRange(double lo, double hi)
