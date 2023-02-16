@@ -22,8 +22,8 @@
 | <a> 06.SOLID </a>            | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/Exercise/06.SOLID"> Link</a> |
 | <a> 07.Reflection </a>     | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/Exercise/07.Reflection"> Link</a> |
 | <a> 08.UnitTesting  </a> | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/Exercise/08.UnitTesting"> Link</a> |
-| <a> 09.Generics </a>                   | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/04.C%23%20Advanced/Exercise/09.Generics"> Link</a> |
-| <a> All</a> | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/04.C%23%20Advanced/Exercise"> Link</a> |
+| <a> 09.MockingAndTestDruven</a>                   | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/Exercise/09.MockingAndTestDriven"> Link</a> |
+| <a> All</a> | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/Exercise"> Link</a> |
 
 </td>
 <td>
