@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Prototype", "01.Prototype\01.Prototype.csproj", "{D755FE83-3FD2-4170-BF78-79F42BFB8C5B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.CompositePattern", "02.CompositePattern\02.CompositePattern.csproj", "{C07CD3C8-A66C-46E9-9184-21E199E17290}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D755FE83-3FD2-4170-BF78-79F42BFB8C5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D755FE83-3FD2-4170-BF78-79F42BFB8C5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D755FE83-3FD2-4170-BF78-79F42BFB8C5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C07CD3C8-A66C-46E9-9184-21E199E17290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C07CD3C8-A66C-46E9-9184-21E199E17290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C07CD3C8-A66C-46E9-9184-21E199E17290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C07CD3C8-A66C-46E9-9184-21E199E17290}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
