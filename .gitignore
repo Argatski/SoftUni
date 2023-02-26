@@ -349,3 +349,6 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 /C#/05.C# - OOP/06.SOLID/SolidExercises/SOLID-Exercises/Models/Appenders/ConsoleAppender.cs.cs
+/C#/05.C# - OOP/Exercise/10.DesingPatterns/DesingPattern-Labs/02.Facade/02.Facade.csproj
+*.csproj
+/C#/05.C# - OOP/Exercise/10.DesingPatterns/DesingPattern-Labs/02.Facade/02.Facade.csproj
