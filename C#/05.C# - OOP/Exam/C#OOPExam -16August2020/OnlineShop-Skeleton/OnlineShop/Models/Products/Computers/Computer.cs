@@ -23,13 +23,14 @@ namespace OnlineShop.Models.Products.Computers
 
         protected Computer(int id, string manufacturer, string model, decimal price, double overallPerformence) : base(id, manufacturer, model, price, overallPerformence)
         {
-
+            this.components = new List<IComponent>();
+            this.peripherals = new List<IPeripheral>();
         }
         public override double OverallPerformance => CalculateOverallPerformance();
 
 
 
-        public override decimal Price => this.Peripherals.Sum(x => x.Price) + this.Components.Sum(x => x.Price);
+        public override decimal Price => this.Peripherals.Sum(x => x.Price) + this.Components.Sum(x => x.Price) + base.Price;
 
         public void AddComponent(IComponent component)
         {
@@ -40,11 +41,13 @@ namespace OnlineShop.Models.Products.Computers
             this.components.Add(component);
         }
 
+
+        //TODO..............
         public IComponent RemoveComponent(string componentType)
         {
-            if (!this.components.Any(c => c.GetType().Name != componentType))
+            if (!this.components.Any(c => c.GetType().Name == componentType))
             {
-                var error = string.Format(ExceptionMessages.ExistingComponent, componentType, this.GetType().Name, this.Id);
+                var error = string.Format(ExceptionMessages.NotExistingComponent, componentType, this.GetType().Name, this.Id);
 
                 throw new ArgumentException(error);
             }
@@ -69,7 +72,7 @@ namespace OnlineShop.Models.Products.Computers
         public IPeripheral RemovePeripheral(string peripheralType)
         {
 
-            if (!this.peripherals.Any(p => p.GetType().Name != peripheralType))
+            if (this.peripherals.Any(p => p.GetType().Name != peripheralType))
             {
                 var error = string.Format(ExceptionMessages.NotExistingPeripheral, peripheralType, this.GetType().Name, this.Id);
                 throw new ArgumentException(error);
@@ -102,16 +105,19 @@ namespace OnlineShop.Models.Products.Computers
             sb.AppendLine($" Components ({components.Count}):");
             foreach (var component in components)
             {
-                sb.AppendLine($"  {component.ToString()}");
+                sb.AppendLine($"  {component}");
             }
-            sb.AppendLine($" Peripherals ({this.peripherals.Count}); Average Overall Performance ({this.peripherals.Average(p => p.OverallPerformance)}):");
+            string averageResult = this.Peripherals.Count == 0 ? "0.00" :
+                this.Peripherals.Average(x => x.OverallPerformance).ToString("F2");
+
+            sb.AppendLine($" Peripherals ({this.Peripherals.Count}); Average Overall Performance ({averageResult}):");
 
             foreach (var peripheral in peripherals)
             {
-                sb.AppendLine($"  {peripheral.ToString()}");
+                sb.AppendLine($"  {peripheral}");
             }
 
-            return base.ToString();
+            return sb.ToString().TrimEnd();
         }
     }
 }
