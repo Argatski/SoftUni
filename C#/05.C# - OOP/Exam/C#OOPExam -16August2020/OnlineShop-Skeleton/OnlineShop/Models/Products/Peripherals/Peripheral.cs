@@ -16,7 +16,7 @@ namespace OnlineShop.Models.Products.Peripherals
 
         public override string ToString()
         {
-            return base.ToString() + " " +string.Format(SuccessMessages.PeripheralToString,this.ConnectionType);
+            return base.ToString() + "" +string.Format(SuccessMessages.PeripheralToString,this.ConnectionType);
         }
 
     }
