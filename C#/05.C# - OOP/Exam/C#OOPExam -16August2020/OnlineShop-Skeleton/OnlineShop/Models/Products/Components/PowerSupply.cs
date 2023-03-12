@@ -9,7 +9,8 @@ namespace OnlineShop.Models.Products.Components
         private const double PowerSupplyMultiplier = 1.05;
         public PowerSupply(int id, string manufacturer, string model, decimal price, double overallPerformence, int generation) : base(id, manufacturer, model, price, overallPerformence, generation)
         {
-            this.OverallPerformance *= PowerSupplyMultiplier;
+            
         }
+        public override double OverallPerformance => base.OverallPerformance*PowerSupplyMultiplier;
     }
 }

@@ -9,7 +9,8 @@ namespace OnlineShop.Models.Products.Components
         private const double VideoCardMultiplier = 1.15;
         public VideoCard(int id, string manufacturer, string model, decimal price, double overallPerformence, int generation) : base(id, manufacturer, model, price, overallPerformence, generation)
         {
-            this.OverallPerformance *= VideoCardMultiplier;
+            
         }
+        public override double OverallPerformance => base.OverallPerformance*VideoCardMultiplier;
     }
 }

@@ -9,7 +9,8 @@ namespace OnlineShop.Models.Products.Components
         private const double CentralProcessingMultiplier = 1.25;
         public CentralProcessingUnit(int id, string manufacturer, string model, decimal price, double overallPerformence, int generation) : base(id, manufacturer, model, price, overallPerformence, generation)
         {
-            this.OverallPerformance *= CentralProcessingMultiplier;
         }
+
+        public override double OverallPerformance => base.OverallPerformance * CentralProcessingMultiplier;
     }
 }

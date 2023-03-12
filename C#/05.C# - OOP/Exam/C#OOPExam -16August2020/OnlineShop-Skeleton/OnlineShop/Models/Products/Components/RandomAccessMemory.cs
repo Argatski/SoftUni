@@ -9,7 +9,7 @@ namespace OnlineShop.Models.Products.Components
         private const double RandomAccessMemoryMultiplier = 1.20;
         public RandomAccessMemory(int id, string manufacturer, string model, decimal price, double overallPerformence, int generation) : base(id, manufacturer, model, price, overallPerformence, generation)
         {
-            this.OverallPerformance *= RandomAccessMemoryMultiplier;
         }
+        public override double OverallPerformance => base.OverallPerformance*RandomAccessMemoryMultiplier;
     }
 }

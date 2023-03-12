@@ -16,7 +16,7 @@ namespace OnlineShop.Models.Products.Components
 
         public override string ToString()
         {
-            return base.ToString() + " " +string.Format(SuccessMessages.ComponentToString, this.Generation);
+            return base.ToString() + "" + string.Format(SuccessMessages.ComponentToString, this.Generation);
         }
     }
 }

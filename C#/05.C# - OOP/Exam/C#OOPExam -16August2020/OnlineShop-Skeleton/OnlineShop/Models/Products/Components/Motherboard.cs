@@ -9,7 +9,7 @@ namespace OnlineShop.Models.Products.Components
         private const double MotherBoardMultiplier = 1.25;
         public Motherboard(int id, string manufacturer, string model, decimal price, double overallPerformence, int generation) : base(id, manufacturer, model, price, overallPerformence, generation)
         {
-            this.OverallPerformance *= MotherBoardMultiplier;
         }
+        public override double OverallPerformance => base.OverallPerformance*MotherBoardMultiplier;
     }
 }

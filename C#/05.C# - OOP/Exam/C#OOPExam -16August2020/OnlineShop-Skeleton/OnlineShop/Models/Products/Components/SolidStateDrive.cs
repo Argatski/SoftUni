@@ -9,7 +9,7 @@ namespace OnlineShop.Models.Products.Components
         private const double SolidStateDriveMultiplier = 1.20;
         public SolidStateDrive(int id, string manufacturer, string model, decimal price, double overallPerformence, int generation) : base(id, manufacturer, model, price, overallPerformence, generation)
         {
-            this.OverallPerformance *= SolidStateDriveMultiplier;
         }
+        public override double OverallPerformance => base.OverallPerformance*SolidStateDriveMultiplier;
     }
 }
