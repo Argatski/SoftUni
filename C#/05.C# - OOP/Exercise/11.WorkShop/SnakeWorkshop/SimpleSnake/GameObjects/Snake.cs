@@ -34,6 +34,7 @@ namespace SimpleSnake.GameObjects
             for (int topY = 1; topY <= 6; topY++)
             {
                 this.snakeElments.Enqueue(new Point(2, topY));
+                
             }
 
         }
