@@ -12,8 +12,8 @@ namespace SimpleSnake.GameObjects
             this.TopY = topY;
         }
 
-        public int LeftX { get; set; }
-        public int TopY { get; set; }
+        public int LeftX { get; protected set; }
+        public int TopY { get; protected set; }
 
         public void Draw(char symbol)
         {
