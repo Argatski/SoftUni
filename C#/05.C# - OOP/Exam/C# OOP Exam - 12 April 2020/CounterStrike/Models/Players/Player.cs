@@ -2,6 +2,8 @@
 using CounterStrike.Models.Players.Contracts;
 using CounterStrike.Utilities.Messages;
 using System;
+using System.Numerics;
+using System.Text;
 
 namespace CounterStrike.Models.Players
 {
@@ -89,6 +91,18 @@ namespace CounterStrike.Models.Players
                 armor = 0;
             }
             this.Health -= points;
+        }
+
+        public override string ToString()
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+
+            stringBuilder.AppendLine($"{this.GetType().Name}: {this.Username}");
+            stringBuilder.AppendLine($"--Health: {this.Health}");
+            stringBuilder.AppendLine($"--Armor: {this.Armor}");
+            stringBuilder.AppendLine($"--Gun: {this.Gun}");
+
+            return base.ToString().TrimEnd();
         }
     }
 }
