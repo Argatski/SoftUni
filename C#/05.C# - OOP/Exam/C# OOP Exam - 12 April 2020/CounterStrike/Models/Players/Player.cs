@@ -69,6 +69,8 @@ namespace CounterStrike.Models.Players
                 {
                     throw new ArgumentException(ExceptionMessages.InvalidGun);
                 }
+
+                this._gun = value;
             }
         }
 
@@ -80,7 +82,7 @@ namespace CounterStrike.Models.Players
 
         public void TakeDamage(int points)
         {
-            if (this.armor - points > 0)
+            if (this.armor - points >= 0)
             {
                 this.armor -= points;
                 return;
@@ -90,7 +92,12 @@ namespace CounterStrike.Models.Players
                 points -= armor;
                 armor = 0;
             }
-            this.Health -= points;
+            this.health -= points;
+            if (health < 0)
+            {
+                this.health = 0;
+            }
+
         }
 
         public override string ToString()
@@ -98,11 +105,11 @@ namespace CounterStrike.Models.Players
             StringBuilder stringBuilder = new StringBuilder();
 
             stringBuilder.AppendLine($"{this.GetType().Name}: {this.Username}");
-            stringBuilder.AppendLine($"--Health: {this.Health}");
-            stringBuilder.AppendLine($"--Armor: {this.Armor}");
-            stringBuilder.AppendLine($"--Gun: {this.Gun}");
+            stringBuilder.AppendLine($"--Health: {Health}");
+            stringBuilder.AppendLine($"--Armor: {Armor}");
+            stringBuilder.AppendLine($"--Gun: {_gun.Name}");
 
-            return base.ToString().TrimEnd();
+            return stringBuilder.ToString().Trim();
         }
     }
 }

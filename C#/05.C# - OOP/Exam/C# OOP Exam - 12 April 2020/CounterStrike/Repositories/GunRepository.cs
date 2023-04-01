@@ -29,7 +29,6 @@ namespace CounterStrike.Repositories
         public IGun FindByName(string name)
         {
             IGun gun = this.guns.FirstOrDefault(x => x.Name == name);
-
             return gun;
         }
 

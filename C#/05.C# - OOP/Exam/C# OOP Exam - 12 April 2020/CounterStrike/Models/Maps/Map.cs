@@ -25,10 +25,12 @@ namespace CounterStrike.Models.Maps
         {
             SeparateTeams(players);
 
-            while (IsTeamAlive(terrorists) && IsTeamAlive(countreTerrorists))
+            while (true)
             {
                 AttackTeam(terrorists, countreTerrorists);
+                
                 AttackTeam(countreTerrorists, terrorists);
+                
 
             }
             if (IsTeamAlive(countreTerrorists))
@@ -39,6 +41,7 @@ namespace CounterStrike.Models.Maps
             {
                 return "Terrorist wins!";
             }
+
             return "Somthing horrible happened";
         }
         private bool IsTeamAlive(List<IPlayer> players)
@@ -50,10 +53,10 @@ namespace CounterStrike.Models.Maps
         {
             foreach (var attacker in attacingTeam)
             {
-                if (!attacker.IsAlive)
-                {
+                /*if (!attacker.IsAlive)
+                { 
                     continue;
-                }
+                }*/
 
                 foreach (var defender in defendingTeam)
                 {
@@ -78,7 +81,7 @@ namespace CounterStrike.Models.Maps
                 {
                     countreTerrorists.Add(player);
                 }
-                else if (player is Player)
+                else if (player is Terrorist)
                 {
                     terrorists.Add(player);
                 }
