@@ -1,7 +1,5 @@
 ﻿namespace Robots
 {
-    using System;
-
     public class Robot
     {
         public Robot(string name, int maximumBattery)
