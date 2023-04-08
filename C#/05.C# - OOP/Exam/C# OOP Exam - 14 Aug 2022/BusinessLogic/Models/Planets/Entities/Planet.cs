@@ -2,6 +2,7 @@
 using PlanetWars.Models.MilitaryUnits.Entities;
 using PlanetWars.Models.Planets.Contracts;
 using PlanetWars.Models.Weapons.Contracts;
+using PlanetWars.Models.Weapons.Entities;
 using PlanetWars.Repositories.Entities;
 using PlanetWars.Utilities.Messages;
 using System;
@@ -45,7 +46,7 @@ namespace PlanetWars.Models.Planets.Entities
             get { return _budget; }
             set
             {
-                if (value > 0)
+                if (value < 0)
                 {
                     throw new ArgumentException(ExceptionMessages.InvalidBudgetAmount);
 
@@ -92,7 +93,7 @@ namespace PlanetWars.Models.Planets.Entities
 
                 foreach (var force in Army)
                 {
-                    stringBuilder.Append(force.GetType().Name);
+                    stringBuilder.AppendLine(force.GetType().Name);
                 }
             }
 
@@ -104,10 +105,13 @@ namespace PlanetWars.Models.Planets.Entities
             }
             else
             {
+                var equipment = new Queue<string>();
                 foreach (var weapon in Weapons)
                 {
-                    stringBuilder.AppendLine(weapon.GetType().Name);
+                    equipment.Enqueue(weapon.GetType().Name);
                 }
+
+                stringBuilder.AppendLine(string.Join(", ",equipment));
             }
 
             stringBuilder.AppendLine($"--Military Power: {this.MilitaryPower}");
@@ -138,10 +142,21 @@ namespace PlanetWars.Models.Planets.Entities
             }
         }
 
-        //TODO....
         private double CalculateMilitaryPower()
         {
-            throw new NotImplementedException();
+            double totallAmount = this.units.Models.Sum(x => x.EnduranceLevel) + this.wepons.Models.Sum(x => x.DestructionLevel);
+
+            if (this.wepons.Models.Any(a => a.GetType().Name == nameof(AnonymousImpactUnit)))
+            {
+                totallAmount *= 1.3;
+            }
+
+            if (this.wepons.Models.Any(a => a.GetType().Name == nameof(NuclearWeapon)))
+            {
+                totallAmount *= 1.45;
+            }
+            return totallAmount;
+
         }
     }
 }
