@@ -16,7 +16,7 @@ namespace PlanetWars.Repositories.Entities
             this._planets = new List<IPlanet>();
         }
 
-        public IReadOnlyCollection<IPlanet> Models => throw new NotImplementedException();
+        public IReadOnlyCollection<IPlanet> Models => this._planets;
 
         public void AddItem(IPlanet model)
         {
