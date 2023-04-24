@@ -13,10 +13,11 @@ namespace ChristmasPastryShop.Models.Booths.Entity
     {
         private int boothId;
         private int capacty;
-        private readonly IRepository<IDelicacy> delicacies;
-        private readonly IRepository<ICocktail> cocktails;
         private double currentBill;
         private double turnover;
+
+        private readonly IRepository<IDelicacy> delicacies;
+        private readonly IRepository<ICocktail> cocktails;
 
 
         public Booth(int boothId, int capacity)
@@ -25,21 +26,23 @@ namespace ChristmasPastryShop.Models.Booths.Entity
             this.Capacity = capacity;
 
             this.delicacies = new DelicacyRepository();
-            this.cocktails =  new CocktailRepository();
+            this.cocktails = new CocktailRepository();
+
+            this.currentBill = 0;
+            this.turnover = 0;
         }
-        //TODO ..........
         public int BoothId
         {
             get { return boothId; }
-            set { this.boothId = value;}
+            private set { this.boothId = value; }
         }
 
         public int Capacity
         {
             get { return capacty; }
-            protected set
+            private set
             {
-                if (value <= 0)
+                if (value < 1)
                 {
                     throw new ArgumentException(ExceptionMessages.CapacityLessThanOne);
                 }
@@ -107,7 +110,7 @@ namespace ChristmasPastryShop.Models.Booths.Entity
                 strb.AppendLine($"--{delicacy}");
             }
 
-            return strb.ToString();
+            return strb.ToString().TrimEnd();
         }
     }
 }
