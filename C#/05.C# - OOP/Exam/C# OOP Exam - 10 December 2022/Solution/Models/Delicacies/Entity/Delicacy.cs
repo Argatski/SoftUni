@@ -1,7 +1,6 @@
 ﻿using ChristmasPastryShop.Models.Delicacies.Contracts;
 using ChristmasPastryShop.Utilities.Messages;
 using System;
-using System.Collections.Generic;
 using System.Text;
 
 namespace ChristmasPastryShop.Models.Delicacies.Entity
@@ -20,7 +19,7 @@ namespace ChristmasPastryShop.Models.Delicacies.Entity
         public string Name
         {
             get { return name; }
-            protected set
+            private set
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
@@ -33,7 +32,7 @@ namespace ChristmasPastryShop.Models.Delicacies.Entity
         public double Price
         {
             get { return price; }
-            protected set
+            private set
             {
                 price = value;
             }
