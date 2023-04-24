@@ -9,7 +9,7 @@ using System.Text;
 
 namespace ChristmasPastryShop.Models.Booths.Entity
 {
-    public abstract class Booth : IBooth
+    public class Booth : IBooth
     {
         private int boothId;
         private int capacty;
@@ -91,23 +91,23 @@ namespace ChristmasPastryShop.Models.Booths.Entity
 
             StringBuilder strb = new StringBuilder();
 
-            strb.AppendLine($"BoothId: {this.BoothId}");
+            strb.AppendLine($"Booth: {this.BoothId}");
             strb.AppendLine($"Capacity: {this.Capacity}");
-            strb.AppendLine($"Turnover: {this.Turnover:f2}");
+            strb.AppendLine($"Turnover: {this.Turnover:f2} lv");
 
-            strb.AppendLine($"Coktail menu:");
+            strb.AppendLine($"-Coktail menu:");
 
             foreach (var coctail in CocktailMenu.Models)
             {
-                strb.AppendLine($"--{coctail}");
+                strb.Append($"--{coctail}");
             }
 
 
-            strb.AppendLine($"Delicacy menu:");
+            strb.AppendLine($"-Delicacy menu:");
 
             foreach (var delicacy in DelicacyMenu.Models)
             {
-                strb.AppendLine($"--{delicacy}");
+                strb.Append($"--{delicacy}");
             }
 
             return strb.ToString().TrimEnd();
