@@ -61,7 +61,7 @@ namespace ChristmasPastryShop.Models.Cocktails.Entity
         {
             StringBuilder strb = new StringBuilder();
 
-            strb.AppendLine($"{this.Name}  ({this.Size}) - {this.Price:F2} lv");
+            strb.AppendLine($"{this.Name} ({this.Size}) - {this.Price:F2} lv");
             return strb.ToString();
         }
     }
