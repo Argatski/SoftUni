@@ -7,7 +7,12 @@ namespace ChristmasPastryShop.Repositories.Entity
 {
     public class CocktailRepository : IRepository<ICocktail>
     {
-        private List<ICocktail> _cocktails = new List<ICocktail>();
+        private readonly List<ICocktail> _cocktails;
+
+        public CocktailRepository()
+        {
+            this._cocktails= new List<ICocktail>();
+        }
 
         public IReadOnlyCollection<ICocktail> Models => this._cocktails;
 
