@@ -21,7 +21,7 @@ namespace ChristmasPastryShop.Models.Cocktails.Entity
         public string Name
         {
             get { return this.name; }
-            protected set
+            private set
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
@@ -30,33 +30,30 @@ namespace ChristmasPastryShop.Models.Cocktails.Entity
                 this.name = value;
             }
         }
-        //TODo ...
         public string Size
         {
             get { return this.size; }
-            protected set
+            private set
             {
-
+                this.size = value;
             }
         }
 
         public double Price
         {
             get { return this.price; }
-            protected set
+            private set
             {
-                if (this.Size == "Large")
+                if (this.Size == "Middle")
                 {
-                    this.price = value;
-                }
-                else if (this.Size == "Middle")
-                {
-                    this.price = value * 2 / 3;
+                    value = (value / 3) * 2;
                 }
                 else if (this.Size == "Small")
                 {
-                    this.price = value / 3;
+                    value /= 3;
                 }
+
+                this.price = value;
             }
         }
 
