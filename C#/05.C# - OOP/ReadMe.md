@@ -30,7 +30,7 @@
 
 | **Content**                                                            | **Link**                                                   |
 | --------------------------------------------------------------------- | ---------------------------------------------------------- |
-| <a> Exams </a>               | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/04.C%23%20Advanced/Exams"> Link</a> |
+| <a> Exams </a>               | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/Exam"> Link</a> |
 
 
 
