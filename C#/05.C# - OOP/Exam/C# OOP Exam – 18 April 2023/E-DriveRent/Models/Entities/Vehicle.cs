@@ -62,6 +62,7 @@ namespace EDriveRent.Models.Entities
                 {
                     throw new ArgumentException(ExceptionMessages.LicenceNumberRequired);
                 }
+                this.licensePlateNumber = value;
             }
         }
 

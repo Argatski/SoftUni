@@ -4,7 +4,7 @@ using System;
 
 namespace EDriveRent.Models.Entities
 {
-    public abstract class User : IUser
+    public class User : IUser
     {
         private string fistName;
         private string lastName;
@@ -44,6 +44,7 @@ namespace EDriveRent.Models.Entities
                 {
                     throw new ArgumentException(ExceptionMessages.LastNameNull);
                 }
+                this.lastName = value;
             }
         }
 
@@ -58,6 +59,7 @@ namespace EDriveRent.Models.Entities
                 {
                     throw new ArgumentException(ExceptionMessages.DrivingLicenseRequired);
                 }
+                this.drivingLicenseNumber = value;
             }
         }
 
