@@ -1,4 +1,4 @@
-<h1>C#-OOP-Exersice</h1>
+<h1>C#-OOP-Exam</h1>
   <ol>
     <li>C# OOP Exam – 18 April 2023</li> 
     <li>C# OOP Exam - 10 December 2022</li>
