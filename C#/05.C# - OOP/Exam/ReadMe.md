@@ -7,6 +7,7 @@
     <li>C#OOPExam -16 August2020</li>
     <li>C# OOP Basics Exam Retake - 19 April 2019</li>
     <li>C# OOP Basics Exam - 16 July 2017</li>
+    <li>C# OOP Basics Exam - 16 August 2020</li>
   </ol>
 
 
