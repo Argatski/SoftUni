@@ -80,9 +80,4 @@ DROP TABLE Towns;
 
 GO
 
----TODO
-CREATE TABLE People
-(
-	Id
-)
 
