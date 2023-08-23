@@ -62,8 +62,8 @@
 | ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
 | <a href="">Data Structures Fundamentals(Not yet) </a>     | <a href=""> Link </a> |
 | <a href="">Data Structures Advanced(Not yet</a>          | <a href=""> Link </a> |
-| <a href="">Algorithm C# Fundamentals(Not yet</a>         |<a href=""> Link</a>| 
-| <a href="">Algorithm C# Andvanced(Not yet </a>           |<a href=""> Link</a>|
+| <a href="">Algorithm C# Fundamentals(Not yet)</a>         |<a href=""> Link</a>| 
+| <a href="">Algorithm C# Andvanced(Not yet) </a>           |<a href=""> Link</a>|
 </td>
 
 </td>
