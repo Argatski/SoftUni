@@ -36,8 +36,8 @@
 
 | **Course**                                                                                  | **Link**                                                                    |
 | ------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| <a href=""> JS Advanced </a>          | <a href=""> Link </a> |
-| <a href=""> JS Applications </a> | <a href=""> Link </a> |
+| <a href=""> JS Advanced(Not yet) </a>          | <a href=""> Link </a> |
+| <a href=""> JS Applications(Not yet) </a> | <a href=""> Link </a> |
 
 </td>
 
@@ -45,8 +45,8 @@
 
 | **Course**                                                                               | **Link**                                                                    |
 | ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| <a href="https://softuni.bg/trainings/3122/html-and-css-september-2020"> HTML & CSS </a> | <a href=""> Link </a> |
-| <a href="https://softuni.bg/trainings/3249/angular-november-2020"> Angular </a>          | <a href=""> Link </a> |
+| <a href="https://softuni.bg/trainings/3122/html-and-css-september-2020"> HTML & CSS(Not yet) </a> | <a href=""> Link </a> |
+| <a href="https://softuni.bg/trainings/3249/angular-november-2020"> Angular(Not yet) </a>          | <a href=""> Link </a> |
 
 </td>
 
@@ -60,10 +60,10 @@
 
 | **Course**                                                                               | **Link**                                                                    |
 | ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| <a href="">Data Structures Fundamentals </a>     | <a href=""> Link </a> |
-| <a href="">Data Structures Advanced</a>          | <a href=""> Link </a> |
-| <a href="">Algorithm C# Fundamentals</a>         |<a href=""> Link</a>| 
-| <a href="">Algorithm C# Andvanced </a>           |<a href=""> Link</a>|
+| <a href="">Data Structures Fundamentals(Not yet) </a>     | <a href=""> Link </a> |
+| <a href="">Data Structures Advanced(Not yet</a>          | <a href=""> Link </a> |
+| <a href="">Algorithm C# Fundamentals(Not yet</a>         |<a href=""> Link</a>| 
+| <a href="">Algorithm C# Andvanced(Not yet </a>           |<a href=""> Link</a>|
 </td>
 
 </td>
