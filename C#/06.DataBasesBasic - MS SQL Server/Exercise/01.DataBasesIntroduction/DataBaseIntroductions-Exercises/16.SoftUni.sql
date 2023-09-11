@@ -1,0 +1,12 @@
+CREATE DATABASE SoftUni
+
+USE SoftUni
+
+/*
+NOT EXECUTED
+*/
+CREATE TABLE Employees
+(
+	Id INT PRIMARY KEY,
+	FirstName NVARCHAR(5
+)
