@@ -7,4 +7,4 @@ SELECT [Name] FROM Towns ORDER BY [Name]
 SELECT [Name] FROM Departments ORDER BY [Name]
 
 /*SELECT ALL RECORDS FROM EMPLOYEES*/
-SELECT	[Salary] FROM Employees ORDER BY Salary DESC
+SELECT	Salary FROM Employees ORDER BY Salary DESC
