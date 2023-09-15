@@ -15,7 +15,7 @@
 | **Content Exersice**                                                            | **Link**                                                   |
 | --------------------------------------------------------------------- | ---------------------------------------------------------- |
 | <a> 01.DataBasesIntroduction </a>            | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/06.DataBasesBasic%20-%20MS%20SQL%20Server/Exercise/01.DataBasesIntroduction"> Link</a> |
-| <a> 02. </a>    | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/Exercise/02.Encapsulation"> Link</a> |
+| <a> 02.Basics-CRUD </a>    | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/Exercise/02.Encapsulation"> Link</a> |
 | <a> 03. </a>  | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/Exercise/03.InterfacesAndAbstraction"> Link</a> |
 | <a> 04.</a> | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/Exercise/04.Polymorphism"> Link</a>|
 | <a> 05. </a>      | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/Exercise/05.ExceptionsAndError/ExceptionsAndErrorHandlingLab"> Link</a> |
