@@ -1,0 +1,7 @@
+/*UPDATE END DATE IN PRODJECT WITH CURRENT DATA*/
+UPDATE  SoftUni.dbo.Projects
+	SET EndDate = GETDATE()
+	WHERE [EndDate] IS NULL
+
+SELECT *
+	FROM [SoftUni].DBO.Projects
