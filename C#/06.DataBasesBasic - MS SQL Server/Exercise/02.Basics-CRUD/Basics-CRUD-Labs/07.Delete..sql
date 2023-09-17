@@ -1,0 +1,12 @@
+/*DELETE DATA*/
+DELETE FROM Names
+	--WHERE FullName LIKE 'R%'
+	WHERE Salary > 30000
+
+SELECT * FROM [Names]
+
+
+/*TRUNCATE MOST POWERFUL*/
+TRUNCATE TABLE Names
+
+
