@@ -52,7 +52,52 @@ SELECT *
 	JOIN Addresses ON Towns.TownID = Addresses.TownID
 	WHERE Name = 'Seattle'
 
+/*NESTED SELECT*/
+SELECT * FROM
+	(SELECT [Name],LEN([Name]) AS Lenght,LEFT([Name],1) AS FirstLetter
+	FROM Towns) AS towns /*CREATE TEMP TABLE*/
+	WHERE FirstLetter ='S'
 
- 
+/*CONCATENATE COLUMS*/
+SELECT [FirstName] + ' ' + [LastName] 
+	FROM [Employees]
 
-	   
+/*01.PROBLEM-LAB*/
+/*FIND INF ABOUT ALL EMPLOYEES, LISTING THEIR FULL NAME,JOBS AND SALARY*/
+SELECT [FirstName] + ' ' + [LastName] AS FullName, JobTitle, Salary
+	FROM [Employees]
+
+/*FIRST 10 RESULT*/
+SELECT TOP(10) /*FIRST 10 RESULT */
+	[FirstName] + ' ' + [LastName] AS FullName, JobTitle, Salary
+	FROM [Employees]
+
+/*SELEC UNIQ JOBS TITLE USE (DISTINCT) THEY ARE SORT */
+SELECT DISTINCT JobTitle
+	FROM [Employees]
+
+/*WHEN WE USE DISTINCT FOR 2 OR MANY COMPONET DISTINCT COMBINEITE THIS 2 */
+SELECT DISTINCT JobTitle,FirstName
+	FROM [Employees]
+
+/*COUNT OF UNIQ JOBTITEL*/
+SELECT COUNT(DISTINCT JobTitle) AS [COUNT]
+	FROM [Employees]
+
+/*SEARCH ALL PERSON IN JOBTITELE*/
+/*FIRST SOLUTION*/
+SELECT DISTINCT
+	JobTitle,
+	(SELECT COUNT(*) FROM Employees AS e2 WHERE e2.JobTitle = e1.JobTitle) AS [Count]
+	FROM [Employees] AS e1
+
+/*SECOND SOLUTION*/
+SELECT JobTitle, COUNT (*) AS [Count]
+	FROM [Employees]
+	GROUP BY JobTitle
+
+/*GET MAX SALARY, MIN SALARY, COUNT*/
+SELECT JobTitle, MAX(Salary) AS [Max Salary], MIN(Salary) AS [Min Salary] ,	
+	COUNT(*) AS [Count], AVG(Salary) AS [Avg] /*THIS FUNC WORK WHEN WE HAVE ONLY GROUP BY*/
+	FROM [Employees]
+	GROUP BY JobTitle /*WORK CELL BY CELL */
