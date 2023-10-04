@@ -45,3 +45,15 @@ SELECT [Name],Quantity,
 			CAST(Quantity AS FLOAT)/BoxCapacity)/PalletCapacity) AS [NUMBER OF PALLETS]
 	FROM Products
 
+
+/*SIGN*/
+SELECT SIGN (-3.25) /*-1.00*/
+SELECT SIGN (3.25) /*1.00*/
+SELECT SIGN (-3) /*-1*/
+SELECT SIGN (3) /*1*/
+SELECT SIGN (0) /*0*/
+
+/*RAND*/
+SELECT RAND()
+SELECT RAND(2)
+
