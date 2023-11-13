@@ -2,7 +2,7 @@ USE Diablo
 
 /*Problem 13. *Scalar Function: Cash in User Games Odd Rows*/
 
-CREATE FUNCTION ufn_CashInUsersGames(@gameName NVARCHAR(MAX))
+CREATE OR ALTER FUNCTION ufn_CashInUsersGames(@gameName NVARCHAR(MAX))
 RETURNS TABLE
 AS
 RETURN
