@@ -1,5 +1,13 @@
 USE Bank
 
+CREATE TABLE Logs
+(
+  LogID INT NOT NULL IDENTITY,
+  AccountID INT FOREIGN KEY REFERENCES Accounts(Id),
+  OldSum MONEY,
+  NewSum MONEY,
+)
+
 /*Problem 14. Create Table Logs*/
 CREATE OR ALTER TRIGGER tr_AccountChanges ON Accounts FOR UPDATE
 AS
