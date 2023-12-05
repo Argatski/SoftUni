@@ -20,8 +20,7 @@
 | <a> 04.BUILT-IN FUNCTIONS</a> | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/Exercise/04.Polymorphism"> Link</a>|
 | <a> 05.SubqeruesAndJoins/05.SubqeruesAndJoins-Exercise </a>      | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/Exercise/05.ExceptionsAndError/ExceptionsAndErrorHandlingLab"> Link</a> |
 | <a> 06.IndicesAndDataAggregation </a>            | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/Exercise/06.SOLID"> Link</a> |
-| <a> 07.FunctionsAndStoredProcedures
- </a>     | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/Exercise/07.Reflection"> Link</a> |
+| <a> 07.FunctionsAndStoredProcedures </a>     | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/Exercise/07.Reflection"> Link</a> |
 | <a> 08.TriggersAndTranslations  </a> | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/Exercise/08.UnitTesting"> Link</a> |
 | <a> All</a> | <a href="https://github.com/Argatski/SoftUni/tree/main/C%23/05.C%23%20-%20OOP/Exercise"> Link</a> |
 
