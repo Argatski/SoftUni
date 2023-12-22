@@ -6,7 +6,7 @@ internal class StartUp
     private static void Main(string[] args)
     {
         var dbContext = new SoftuniContext();
-        /*
+        
         var employees =  dbContext.Employees.Where(x => x.Department.Manager.Department.Name == "Sales")
             .Select(x => new
             {
@@ -17,10 +17,10 @@ internal class StartUp
 
         foreach (var emp in employees)
         {
-            Console.WriteLine(emp.Name+ ' - '+emp.Department + ' - ' + emp.Manger);
+            Console.WriteLine(emp.Name+ " - " +emp.Department + " - " + emp.Manger);
 
         }
-        */
+        
 
         var allEmp = dbContext.Employees.ToList();
        
