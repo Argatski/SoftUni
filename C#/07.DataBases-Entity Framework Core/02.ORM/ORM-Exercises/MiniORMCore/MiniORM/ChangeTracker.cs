@@ -1,13 +1,13 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Reflection;
-
-namespace MiniORM
+﻿namespace MiniORM
 {
-    public class ChageTracker<T> where T : class, new()
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.Linq;
+    using System.Reflection;
+
+    internal class ChangeTracker<T>
+        where T : class, new()
     {
         private readonly List<T> allEntities;
 
@@ -15,86 +15,83 @@ namespace MiniORM
 
         private readonly List<T> removed;
 
-
-        public ChageTracker(IEnumerable<T> entities)
+        public ChangeTracker(IEnumerable<T> entities)
         {
-            added = new List<T>();
-            removed = new List<T>();
+            this.added = new List<T>();
+            this.removed = new List<T>();
 
             this.allEntities = CloneEntities(entities);
         }
 
-        private List<T> CloneEntities(IEnumerable<T> entities)
+        private static List<T> CloneEntities(IEnumerable<T> entities)
         {
-            var clonedEntities =  new List<T>();
+            var clonedEntities = new List<T>();
 
-            PropertyInfo[] propertiesToClone = typeof(T).GetProperties()
-                .Where(pi => DbContext.AllowedSqlTypes.Contains(pi.PropertyType)).ToArray();
+            var propertiesToClone = typeof(T).GetProperties()
+                .Where(pi => DbContext.AllowedSqlTypes.Contains(pi.PropertyType))
+                .ToArray();
 
-
-            foreach(var entity in entities)
+            foreach (var entity in entities)
             {
-                var clonedEnity = Activator.CreateInstance<T>();
+                var clonedEntity = Activator.CreateInstance<T>();
 
-                foreach(var property in propertiesToClone)
+                foreach (var property in propertiesToClone)
                 {
-                    var value =  property.GetValue(entity);
-                    property.SetValue(clonedEnity, value);
+                    var value = property.GetValue(entity);
+                    property.SetValue(clonedEntity, value);
                 }
 
-                clonedEntities.Add(entity);
+                clonedEntities.Add(clonedEntity);
             }
-
 
             return clonedEntities;
         }
 
-       public IReadOnlyCollection<T> AllEntities => this.allEntities.AsReadOnly();
+        public IReadOnlyCollection<T> AllEntities => this.allEntities.AsReadOnly();
 
-        public IReadOnlyCollection<T> Added =>this.added.AsReadOnly();
+        public IReadOnlyCollection<T> Added => this.added.AsReadOnly();
 
-        public IReadOnlyCollection<T> Removed =>  this.removed.AsReadOnly();
+        public IReadOnlyCollection<T> Removed => this.removed.AsReadOnly();
 
-        public void Add(T entity) =>this.Add(entity);
+        public void Add(T item) => this.added.Add(item);
 
-        public void Remove(T entity) =>this.Remove(entity);
-
+        public void Remove(T item) => this.removed.Add(item);
 
         public IEnumerable<T> GetModifiedEntities(DbSet<T> dbSet)
         {
-            var modifiedEntities =  new List<T>();
+            var modifiedEntities = new List<T>();
 
-            var primaryKeys =  typeof(T).GetProperties().Where(pi=>pi.HasAttribute<KeyAttribute>())
+            var primaryKeys = typeof(T).GetProperties()
+                .Where(pi => pi.HasAttribute<KeyAttribute>())
                 .ToArray();
 
             foreach (var proxyEntity in this.AllEntities)
             {
-                var primaryKeyValue = GetPrimaryKeyValue(primaryKeys, proxyEntity).ToArray();
+                var primaryKeyValues = GetPrimaryKeyValues(primaryKeys, proxyEntity).ToArray();
 
-                var entity =  dbSet.Entities.Single(e=>GetPrimaryKeyValue(primaryKeys,e).SequenceEqual(primaryKeyValue));
+                var entity = dbSet.Entities
+                    .Single(e => GetPrimaryKeyValues(primaryKeys, e).SequenceEqual(primaryKeyValues));
 
                 var isModified = IsModified(proxyEntity, entity);
-
                 if (isModified)
                 {
                     modifiedEntities.Add(entity);
                 }
             }
+
             return modifiedEntities;
         }
 
-        private IEnumerable<object> GetPrimaryKeyValue(IEnumerable<PropertyInfo> primaryKeys, T entity)
+        private static bool IsModified(T entity, T proxyEntity)
         {
-            return primaryKeys.Select(pk => pk.GetValue(entity));
-        }
+            var monitoredProperties = typeof(T).GetProperties()
+                .Where(pi => DbContext.AllowedSqlTypes.Contains(pi.PropertyType));
 
-        private static bool IsModified(T entity, T proxyEntity) 
-        {
-            var monitoredProperties =  typeof(T).GetProperties().Where(pi=>DbContext.AllowedSqlTypes.Contains(pi.PropertyType));
+            var modifiedProperties = monitoredProperties
+                .Where(pi => !Equals(pi.GetValue(entity), pi.GetValue(proxyEntity)))
+                .ToArray();
 
-            var modifiedProperties =  monitoredProperties.Where(pi=>!Equals(pi.GetValue(entity),pi.GetValue(proxyEntity))).ToArray();
-
-            var isModified =  modifiedProperties.Any();
+            var isModified = modifiedProperties.Any();
 
             return isModified;
         }
